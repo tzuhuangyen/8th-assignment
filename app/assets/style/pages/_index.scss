@@ -1,0 +1,24 @@
+.banner {
+  .title {
+    width: 100px;
+    height: 500px;
+    background-color: black;
+    writing-mode: vertical-rl;
+    font-family: "Squada One";
+  }
+  .banner-img {
+    @include media-breakpoint-up(md) {
+      width: 765px;
+      height: 500px;
+    }
+  }
+  .bannerCardImg {
+    width: 329px;
+    height: 340px;
+  }
+}
+.banner {
+  .bannerCardBody {
+    padding: 48px 24px 24px 24px;
+  }
+}

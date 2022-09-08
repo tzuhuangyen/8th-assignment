@@ -5,6 +5,89 @@ engine: ejs
 current: index
 ---
 
+<section class="banner">
+  <div class="container">
+    <ul class="d-flex flex-md-row flex-column">
+      <li class="title text-light pt-3 px-4 d-none d-md-block">
+        <h2 class="fs-1">Recommend<span class="fs-4">推 薦 系 列</span></h2>
+      </li>
+      <li>
+        <img class="banner-img" src="./assets/images/art01.jpeg" alt="" />
+      </li>
+      <li
+        class="banner-text bg-white pt-5 px-2 pt-md-8 ps-md-4 d-flex flex-column justify-content-between"
+      >
+        <div>
+          <span class="fs-5 mb-1">Kemus Wu</span>
+          <h2 class="fs-1 mb-4">瞳孔:流動的脈絡</h2>
+          <p>
+            眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。
+          </p>
+        </div>
+        <div class="text-end mt-4">
+          <button class="btn btn-triangle btn-white mb-4">MORE</button>
+        </div>
+      </li>
+    </ul>
+
+    <!-- card -->
+    <div class="row g-0">
+      <!-- 第一張卡片區 -->
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <!-- 卡片左內容 -->
+            <div class="col-md-6 col-12">
+              <div class="card-body bannerCardBody">
+                <span class="fs-5 mb-md-1">Joanne </span>
+                <h5 class="card-title fs-2 fw-bold mb-md-4">海洋波度</h5>
+                <p class="card-text">
+                  海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
+                </p>
+                <div class="d-block text-end">
+                  <button class="btn btn-triangle btn-white">MORE</button>
+                </div>
+              </div>
+            </div>
+            <!-- 卡片右圖片 -->
+            <div class="col-md-6 col-12">
+              <img
+                src="./assets/images/art02.jpeg"
+                class="img-fluid rounded-start bannerCardImg"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 第二張卡片區 -->
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="card-body bannerCardBody">
+                <span>Michael </span>
+                <h5 class="card-title">我家窗前的鳥</h5>
+                <p class="card-text">
+                  家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+                </p>
+                <button class="btn btn-triangle btn-white">MORE</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="./assets/images/art21.jpeg"
+                class="img-fluid rounded-start bannerCardImg"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 三種 Button 樣式：
 
 <button class="btn btn-triangle btn-white">MORE</button>
@@ -12,7 +95,180 @@ current: index
 <button class="btn btn-triangle btn-border">無框 hover後 黑框 橘底</button>
 
 <button class="btn btn-primary">連結錢包</button>
+<section class="ranking"></section>
+<section class="artist"></section>
 
-<section class="artWork">
-  <div class="container"></div>
+<!-- 瀑布流 -->
+<section class="artwork">
+  <div class="container">
+    <div
+      class="row"
+      data-masonry='{"percentPosition": true }'
+      style="position: relative; height: 774px"
+    >
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="card">
+          <svg
+            class="bd-placeholder-img card-img-top"
+            width="100%"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: Image cap"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+          </svg>
+
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 33.3333%; top: 0px"
+      >
+        <div class="card p-3">
+          <figure class="p-3 mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 66.6667%; top: 0px"
+      >
+        <div class="card">
+          <svg
+            class="bd-placeholder-img card-img-top"
+            width="100%"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: Image cap"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+          </svg>
+
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 33.3333%; top: 201px"
+      >
+        <div class="card bg-primary text-white text-center p-3">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 33.3333%; top: 370px"
+      >
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has a regular title and short paragraph of text below
+              it.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 66.6667%; top: 402px"
+      >
+        <div class="card">
+          <svg
+            class="bd-placeholder-img card-img"
+            width="100%"
+            height="260"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: Card image"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text>
+          </svg>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 0%; top: 410px"
+      >
+        <div class="card p-3 text-end">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-8"
+        style="position: absolute; left: 33.3333%; top: 548px"
+      >
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is another card with title and supporting text below. This
+              card has some additional content to make it slightly taller
+              overall.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

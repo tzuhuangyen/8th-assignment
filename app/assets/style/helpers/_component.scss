@@ -1,0 +1,45 @@
+.container {
+  @include media-breakpoint-up(lg) {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+.btn {
+  padding: 8px 42px;
+  font-size: $h5-font-size; //18px
+  width: 132px;
+}
+.btn-triangle {
+  position: relative;
+  &:after {
+    // 橘色三角形
+    content: "";
+    position: relative;
+    left: 22px;
+    bottom: 6px;
+    border-left: 16px transparent solid;
+    border-bottom: 16px #e6553b solid;
+  }
+  &:hover {
+    &:after {
+      border-bottom: 16px black solid;
+    }
+  }
+}
+
+.btn-white {
+  background-color: white;
+  border: 1px solid black;
+  &:hover {
+    background-color: #e6553b;
+    color: white;
+  }
+}
+
+.btn-border {
+  &:hover {
+    background-color: #e6553b;
+    color: white;
+    border: 1px solid black;
+  }
+}

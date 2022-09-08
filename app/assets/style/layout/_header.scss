@@ -1,0 +1,62 @@
+.header {
+  border-bottom: 1px solid black;
+}
+h1 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  // border: 1px solid black;
+}
+
+.navbar {
+  padding: 0;
+  li {
+    border-left: 1px solid black;
+  }
+  .form-control {
+    border: none;
+    background-color: #f0f0f0;
+    width: 288px;
+    padding: 45px 24px 45px 45px;
+  }
+  .searchBtn {
+    @include media-breakpoint-up(lg) {
+      padding-left: 24px;
+      padding-right: 47px;
+    }
+    padding: 0 24px 0 65px;
+    width: 18px;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+}
+
+// 下拉式選單設定
+.navbar-nav {
+  background-color: white;
+  // display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  //讓選單向上推出 header 的空間，避免選單展開時會遮擋住 header
+  width: 100%;
+  // max-height: 0px;
+  // overflow: hidden;
+  text-align: center;
+  .nav-item {
+    border-bottom: 1px solid black;
+  }
+  .btn-primary-link {
+    width: 100%;
+    padding: 12px 24px;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-weight: $font-weight-bold;
+  color: black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @include media-breakpoint-up(md) {
+    padding: 45px 47px;
+  }
+}
