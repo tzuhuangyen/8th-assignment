@@ -4,19 +4,17 @@
     padding-right: 72px;
   }
 }
-.btn {
+.moreBtn {
   padding: 8px 42px;
   font-size: $h5-font-size; //18px
-  width: 132px;
-}
-.btn-triangle {
+  width: 140px;
   position: relative;
   &:after {
     // 橘色三角形
     content: "";
-    position: relative;
-    left: 22px;
-    bottom: 6px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
     border-left: 16px transparent solid;
     border-bottom: 16px #e6553b solid;
   }
