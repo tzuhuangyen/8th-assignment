@@ -12953,6 +12953,7 @@ ul {
   font-size: 1.125rem;
   width: 140px;
   position: relative;
+  border: 1px solid transparent;
 }
 
 .moreBtn:after {
@@ -13088,6 +13089,10 @@ h1, .h1 {
 
 .banner .bannerCardBody {
   padding: 48px 24px 24px 24px;
+}
+
+.ranking .card img {
+  height: 374px;
 }
 
 /*# sourceMappingURL=all.css.map */
