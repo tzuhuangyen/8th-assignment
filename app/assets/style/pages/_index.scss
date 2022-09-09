@@ -13,8 +13,12 @@
     }
   }
   .bannerCardImg {
-    width: 329px;
-    height: 340px;
+    width: 100%;
+    height: 372px;
+    @include media-breakpoint-up(md) {
+      width: 329px;
+      height: 340px;
+    }
   }
 }
 .banner {
