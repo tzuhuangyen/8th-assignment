@@ -12937,6 +12937,10 @@ a {
   display: block;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
   .container {
     padding-left: 72px;
@@ -13018,10 +13022,10 @@ h1, .h1 {
 
 .navbar .navbar-toggler {
   border: none;
+  position: relative;
 }
 
 .navbar-nav {
-  background-color: white;
   position: absolute;
   left: 0;
   top: 100%;
@@ -13029,8 +13033,10 @@ h1, .h1 {
   text-align: center;
 }
 
-.navbar-nav .nav-item {
-  border-bottom: 1px solid black;
+@media (min-width: 992px) {
+  .navbar-nav {
+    position: inherit;
+  }
 }
 
 .navbar-nav .btn-primary-link {
@@ -13047,7 +13053,7 @@ h1, .h1 {
 
 @media (min-width: 768px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 45px 47px;
+    padding: 45px 48px;
   }
 }
 
