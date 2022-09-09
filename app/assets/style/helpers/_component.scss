@@ -9,6 +9,7 @@
   font-size: $h5-font-size; //18px
   width: 140px;
   position: relative;
+  border: 1px solid transparent;
   &:after {
     // 橘色三角形
     content: "";
