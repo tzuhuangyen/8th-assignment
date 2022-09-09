@@ -13075,8 +13075,15 @@ h1, .h1 {
 }
 
 .banner .bannerCardImg {
-  width: 329px;
-  height: 340px;
+  width: 100%;
+  height: 372px;
+}
+
+@media (min-width: 768px) {
+  .banner .bannerCardImg {
+    width: 329px;
+    height: 340px;
+  }
 }
 
 .banner .bannerCardBody {
