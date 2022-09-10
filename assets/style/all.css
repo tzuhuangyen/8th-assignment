@@ -8670,7 +8670,7 @@ fieldset:disabled .btn {
 }
 
 .lh-sm {
-  line-height: 1.25 !important;
+  line-height: 1.2 !important;
 }
 
 .lh-base {
@@ -12953,7 +12953,7 @@ ul {
   font-size: 1.125rem;
   width: 140px;
   position: relative;
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
 
 .moreBtn:after {
@@ -12971,7 +12971,6 @@ ul {
 
 .btn-white {
   background-color: white;
-  border: 1px solid black;
 }
 
 .btn-white:hover {
@@ -12979,10 +12978,68 @@ ul {
   color: white;
 }
 
-.btn-border:hover {
+.moreBtn-border {
+  padding: 8px 42px;
+  font-size: 1.125rem;
+  width: 140px;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.moreBtn-border:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #e6553b solid;
+}
+
+.moreBtn-border:hover {
   background-color: #e6553b;
   color: white;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.moreBtn-border:hover:after {
+  border-bottom: 16px black solid;
+}
+
+.img-hover {
+  position: relative;
+  background-color: #000;
+}
+
+.img-hover:hover:before {
+  content: "more";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-hover:hover:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #e6553b solid;
 }
 
 .header {
@@ -13091,8 +13148,25 @@ h1, .h1 {
   padding: 48px 24px 24px 24px;
 }
 
-.ranking .card img {
+.ranking .ranking-bigCard-img {
   height: 374px;
+}
+
+.ranking .ranking-smallCard-img {
+  width: 87px;
+  height: 90px;
+}
+
+.ranking .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
 /*# sourceMappingURL=all.css.map */
