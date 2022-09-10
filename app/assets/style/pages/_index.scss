@@ -27,28 +27,22 @@
   }
 }
 
-// 大小張照片
+// 照片
 .ranking {
-  .ranking-bigCard-img {
-    height: 374px;
-  }
-  .ranking-smallCard-img {
+  .ranking-img {
     width: 87px;
-    height: 90px;
+    height: auto;
+    @include media-breakpoint-up(md) {
+      height: 374px;
+    }
   }
 }
 
-// 為元素號碼
+//號碼
 .ranking {
   .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 48px;
-    height: 48px;
-    padding: 8px;
+    width: 38px;
+
     background-color: white;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
   }
 }
