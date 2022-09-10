@@ -102,19 +102,21 @@ current: index
         <h2 class="fs-1 me-3">Ranking</h2>
         <p class="fs-4 fw-bold">市價排行榜</p>
       </div>
-      <div class="moreBtn btn-border">MORE</div>
+      <div class="moreBtn-border">MORE</div>
     </div>
     <!-- cards -->
     <div class="row mt-7">
+      <!-- big cards -->
       <div class="col-lg-4 mb-4">
         <div class="card">
+          <div class="number fs-2">1</div>
           <img
             src="./assets/images/art04.jpeg"
-            class="card-img-top border-bottom"
+            class="card-img-top border-bottom ranking-bigCard-img"
             alt="..."
           />
           <div class="card-body p-0">
-            <h5 class="card-title fw-bold p-3 m-0 border-bottom">
+            <h5 class="card-title fs-5 fw-bold p-3 m-0 border-bottom">
               散步遇到的女人
             </h5>
             <div class="card-text d-flex justify-content-between py-1 px-3">
@@ -131,15 +133,15 @@ current: index
         <div class="card">
           <img
             src="./assets/images/art05.jpeg"
-            class="card-img-top border-bottom"
+            class="card-img-top border-bottom ranking-bigCard-img"
             alt="..."
           />
           <div class="card-body p-0">
-            <h5 class="card-title fw-bold p-3 m-0 border-bottom">
-              散步遇到的女人
+            <h5 class="card-title fs-5 fw-bold p-3 m-0 border-bottom">
+              爆炸頭的母親
             </h5>
             <div class="card-text d-flex justify-content-between py-1 px-3">
-              <p>Zoe Jiang</p>
+              <p>Yui</p>
               <div>
                 <i class="fa-brands fa-ethereum"></i>
                 <span>300</span>
@@ -151,16 +153,16 @@ current: index
       <div class="col-lg-4 mb-4">
         <div class="card">
           <img
-            src="./assets/images/art06.jpeg"
-            class="card-img-top border-bottom"
+            src="./assets/images/art06.jpeg "
+            class="card-img-top border-bottom ranking-bigCard-img"
             alt="..."
           />
           <div class="card-body p-0">
-            <h5 class="card-title fw-bold p-3 m-0 border-bottom">
-              散步遇到的女人
+            <h5 class="card-title fs-5 fw-bold p-3 m-0 border-bottom">
+              夏天的時候
             </h5>
             <div class="card-text d-flex justify-content-between py-1 px-3">
-              <p>Zoe Jiang</p>
+              <p>Bug Lin</p>
               <div>
                 <i class="fa-brands fa-ethereum"></i>
                 <span>300</span>
@@ -168,6 +170,35 @@ current: index
             </div>
           </div>
         </div>
+      </div>
+      <!-- small cards -->
+      <div class="col-lg-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex">
+              <div class="card-header p-0 border-0 d-flex align-items-center h-100" >
+                <div class="number-smallCard px-3 fs-3">4</div>
+                <a href="#" class="d-block img-hover">
+                  <img src="./assets/images/art13.jpeg" class="img-fluid  ranking-smallCard-img" alt="...">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">追求者送我的花</h5>
+                <div class="card-text d-flex justify-content-between py-1 px-3">
+                  <p >Michael</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
       </div>
     </div>
     <!-- end of container div -->
@@ -179,7 +210,7 @@ Button 樣式：
 <div>
   <button class="moreBtn btn-white">MORE</button>
   <button class="btn btn-primary">連結錢包</button>
-  <button class="moreBtn btn-border">無框 hover後 黑框 橘底</button>
+  <button class="moreBtn-border">無框 hover後 黑框 橘底</button>
 </div>
 
 <section class="artist"></section>

@@ -4,12 +4,14 @@
     padding-right: 72px;
   }
 }
+
+// 黑框btn
 .moreBtn {
   padding: 8px 42px;
   font-size: $h5-font-size; //18px
   width: 140px;
   position: relative;
-  border: 1px solid transparent;
+  border: 1px solid black;
   &:after {
     // 橘色三角形
     content: "";
@@ -26,19 +28,71 @@
   }
 }
 
+//白底 hover後橘底
 .btn-white {
   background-color: white;
-  border: 1px solid black;
+
   &:hover {
     background-color: #e6553b;
     color: white;
   }
 }
 
-.btn-border {
+// 無框btn hover後 黑框橘底
+.moreBtn-border {
+  padding: 8px 42px;
+  font-size: $h5-font-size; //18px
+  width: 140px;
+  position: relative;
+  border: 1px solid transparent;
+  &:after {
+    // 橘色三角形
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    border-left: 16px transparent solid;
+    border-bottom: 16px #e6553b solid;
+  }
   &:hover {
     background-color: #e6553b;
     color: white;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    &:after {
+      border-bottom: 16px black solid;
+    }
+  }
+}
+
+// hover遮罩+橘色三角形
+.img-hover {
+  position: relative;
+  background-color: #000;
+  &:hover {
+    &:before {
+      content: "more";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.5;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:after {
+      // 橘色三角形
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-left: 16px transparent solid;
+      border-bottom: 16px #e6553b solid;
+    }
   }
 }
