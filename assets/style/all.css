@@ -12951,6 +12951,7 @@ ul {
 .moreBtn {
   padding: 8px 42px;
   font-size: 1.125rem;
+  font-family: "squada One";
   width: 140px;
   position: relative;
   border: 1px solid black;
@@ -12981,6 +12982,7 @@ ul {
 .moreBtn-border {
   padding: 8px 42px;
   font-size: 1.125rem;
+  font-family: "squada One";
   width: 140px;
   position: relative;
   border: 1px solid transparent;
@@ -13040,6 +13042,12 @@ ul {
   bottom: 0;
   border-left: 16px transparent solid;
   border-bottom: 16px #e6553b solid;
+}
+
+.ff-squada {
+  font-family: "squada One";
+  font-size: 16px;
+  color: black;
 }
 
 .header {
@@ -13148,25 +13156,20 @@ h1, .h1 {
   padding: 48px 24px 24px 24px;
 }
 
-.ranking .ranking-bigCard-img {
-  height: 374px;
+.ranking .ranking-img {
+  width: 87px;
+  height: auto;
 }
 
-.ranking .ranking-smallCard-img {
-  width: 87px;
-  height: 90px;
+@media (min-width: 768px) {
+  .ranking .ranking-img {
+    height: 374px;
+  }
 }
 
 .ranking .number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 48px;
-  padding: 8px;
+  width: 38px;
   background-color: white;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
 }
 
 /*# sourceMappingURL=all.css.map */

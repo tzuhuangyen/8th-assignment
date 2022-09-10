@@ -181,33 +181,52 @@
 <section class="ranking">
   <div class="container mt-9">
     <!-- title -->
-    <div class="d-flex justify-content-between align-items-end border-bottom">
-      <div class="d-flex justify-content-between align-items-baseline mb-3">
+    <div
+      class="mb-4 d-flex justify-content-between align-items-end border-bottom"
+    >
+      <div
+        class="d-flex justify-content-between align-items-baseline mb-1 mb-md-3"
+      >
         <h2 class="fs-1 me-3">Ranking</h2>
-        <p class="fs-4 fw-bold">市價排行榜</p>
+        <p class="fs-4 fw-bold d-none d-md-block">市價排行榜</p>
       </div>
       <div class="moreBtn-border">MORE</div>
     </div>
     <!-- cards -->
-    <div class="row mt-7">
+    <div class="row mt-7 d-flex flex-column">
       <!-- big cards -->
       <div class="col-lg-4 mb-4">
         <div class="card">
-          <div class="number fs-2">1</div>
-          <img
-            src="./assets/images/art04.jpeg"
-            class="card-img-top border-bottom ranking-bigCard-img"
-            alt="..."
-          />
-          <div class="card-body p-0">
-            <h5 class="card-title fs-5 fw-bold p-3 m-0 border-bottom">
-              散步遇到的女人
-            </h5>
-            <div class="card-text d-flex justify-content-between py-1 px-3">
-              <p>Zoe Jiang</p>
-              <div>
-                <i class="fa-brands fa-ethereum"></i>
-                <span>300</span>
+          <div class="row m-0">
+            <!-- 第一名 -->
+            <div class="col-3 col-md-12 p-0">
+              <div class="card-header border-0 p-0 d-flex align-items-center">
+                <div class="number fs-2 px-1">1</div>
+                <a class="d-block img-hover">
+                  <img
+                    src="./assets/images/art04.jpeg"
+                    class="ranking-img"
+                    alt="散步遇到的女人"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-9 col-md-12 p-0">
+              <div class="card-body p-0">
+                <h5
+                  class="card-title fs-5 lh-sm fw-bold px-1 py-3 m-0 border-bottom"
+                >
+                  散步遇到的女人
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-lg-1 p-1"
+                >
+                  <p>Zoe Jiang</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -255,23 +274,35 @@
           </div>
         </div>
       </div>
-      <!-- small cards -->
-      <div class="col-lg-4">
-        <div class="card mb-3">
+    </div>
+    <!-- small cards -->
+    <div class="row">
+      <div class="d-md-none mb-3">
+        <div class="card">
           <div class="row g-0">
-            <div class="col-md-4 d-flex">
-              <div class="card-header p-0 border-0 d-flex align-items-center h-100" >
-                <div class="number-smallCard px-3 fs-3">4</div>
+            <div class="col-md-4 col-4">
+              <div
+                class="card-header p-0 border-0 d-flex align-items-center h-100"
+              >
+                <div class="number-smallCard px-3 fs-3">1</div>
                 <a href="#" class="d-block img-hover">
-                  <img src="./assets/images/art13.jpeg" class="img-fluid  ranking-smallCard-img" alt="...">
+                  <img
+                    src="./assets/images/art04.jpeg"
+                    class="img-fluid ranking-smallCard-img"
+                    alt="散步遇到的女人"
+                  />
                 </a>
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-8">
               <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">追求者送我的花</h5>
-                <div class="card-text d-flex justify-content-between py-1 px-3">
-                  <p >Michael</p>
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+                  散步遇到的女人
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
+                >
+                  <p>Zoe Jiang</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
@@ -282,19 +313,200 @@
           </div>
         </div>
       </div>
-       
+      <div class="d-md-none mb-3">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-4">
+              <div
+                class="card-header p-0 border-0 d-flex align-items-center h-100"
+              >
+                <div class="number-smallCard px-3 fs-3">2</div>
+                <a href="#" class="d-block img-hover">
+                  <img
+                    src="./assets/images/art05.jpeg"
+                    class="img-fluid ranking-smallCard-img"
+                    alt="爆炸頭的母親"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8 col-8">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+                  爆炸頭的母親
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
+                >
+                  <p>Yui</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none mb-3">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-4">
+              <div
+                class="card-header p-0 border-0 d-flex align-items-center h-100"
+              >
+                <div class="number-smallCard px-3 fs-3">3</div>
+                <a href="#" class="d-block img-hover">
+                  <img
+                    src="./assets/images/art06.jpeg"
+                    class="img-fluid ranking-smallCard-img"
+                    alt="夏天的時候"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8 col-8">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+                  夏天的時候
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
+                >
+                  <p>Bug Lin</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-lg-9 mb-3">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-4">
+              <div
+                class="card-header p-0 border-0 d-flex align-items-center h-100"
+              >
+                <div class="number-smallCard fs-3 px-md-3 px-1">4</div>
+                <a href="#" class="d-block img-hover">
+                  <img
+                    src="./assets/images/art13.jpeg"
+                    class="img-fluid ranking-smallCard-img"
+                    alt="..."
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8 col-8">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+                  追求者送我的花
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
+                >
+                  <p>Michael</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-3">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-4">
+              <div
+                class="card-header p-0 border-0 d-flex align-items-center h-100"
+              >
+                <div class="number-smallCard px-3 fs-3">5</div>
+                <a href="#" class="d-block img-hover">
+                  <img
+                    src="./assets/images/art07.jpeg"
+                    class="img-fluid ranking-smallCard-img"
+                    alt="..."
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8 col-8">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+                  今天釣到的魚
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
+                >
+                  <p>Wei JJ</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-3">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-4">
+              <div
+                class="card-header p-0 border-0 d-flex align-items-center h-100"
+              >
+                <div class="number-smallCard px-3 fs-3">6</div>
+                <a href="#" class="d-block img-hover">
+                  <img
+                    src="./assets/images/art08.jpeg"
+                    class="img-fluid ranking-smallCard-img"
+                    alt="..."
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8 col-8">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+                  人生中的貓咪們
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
+                >
+                  <p>Even Lai</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
     <!-- end of container div -->
   </div>
   <!-- end of section-->
 </section>
 
-Button 樣式：
-<div>
-  <button class="moreBtn btn-white">MORE</button>
-  <button class="btn btn-primary">連結錢包</button>
-  <button class="moreBtn-border">無框 hover後 黑框 橘底</button>
+<div class="container">
+  Button 樣式：
+  <div>
+    <button class="moreBtn btn-white">MORE</button>
+    <button class="btn btn-primary">連結錢包</button>
+    <button class="moreBtn-border">無框 hover後 黑框 橘底</button>
+  </div>
 </div>
 
 <section class="artist"></section>
