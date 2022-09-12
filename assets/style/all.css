@@ -13015,7 +13015,8 @@ ul {
 }
 
 .img-hover:hover:before {
-  content: "more";
+  content: "";
+  font-family: "squada One";
   position: absolute;
   top: 0;
   right: 0;
@@ -13041,7 +13042,7 @@ ul {
   right: 0;
   bottom: 0;
   border-left: 16px transparent solid;
-  border-bottom: 16px #e6553b solid;
+  border-bottom: 16px solid #e6553b;
 }
 
 .ff-squada {
@@ -13156,20 +13157,44 @@ h1, .h1 {
   padding: 48px 24px 24px 24px;
 }
 
+.ranking .card {
+  height: 91px;
+}
+
 .ranking .ranking-img {
   width: 87px;
-  height: auto;
+  height: 90px;
 }
 
 @media (min-width: 768px) {
   .ranking .ranking-img {
     height: 374px;
+    width: 414px;
   }
 }
 
 .ranking .number {
   width: 38px;
   background-color: white;
+}
+
+@media (min-width: 992px) {
+  .ranking .number {
+    width: 64px;
+    height: 64px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.ranking .moreBtn {
+  bottom: -286px;
+  right: 0px;
+  display: none;
+}
+
+.ranking .moreBtn:hover {
+  display: block;
 }
 
 /*# sourceMappingURL=all.css.map */
