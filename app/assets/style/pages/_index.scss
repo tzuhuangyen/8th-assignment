@@ -27,22 +27,41 @@
   }
 }
 
+.ranking {
+  .card {
+    height: 91px;
+  }
+}
 // 照片
 .ranking {
   .ranking-img {
     width: 87px;
-    height: auto;
+    height: 90px;
     @include media-breakpoint-up(md) {
       height: 374px;
+      width: 414px;
     }
   }
 }
 
-//號碼
+//號碼＆hover按鈕位置
 .ranking {
   .number {
     width: 38px;
-
     background-color: white;
+    @include media-breakpoint-up(lg) {
+      width: 64px;
+      height: 64px;
+      top: 0;
+      left: 0;
+    }
+  }
+  .moreBtn {
+    bottom: -286px;
+    right: 0px;
+    display: none;
+    &:hover {
+      display: block;
+    }
   }
 }

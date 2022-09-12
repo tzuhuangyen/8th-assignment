@@ -68,13 +68,14 @@
   }
 }
 
-// hover遮罩+橘色三角形
+//桌機 hover遮罩+moreBtn+橘色三角形
 .img-hover {
   position: relative;
   background-color: #000;
   &:hover {
     &:before {
-      content: "more";
+      content: "";
+      font-family: "squada One";
       position: absolute;
       top: 0;
       right: 0;
@@ -94,7 +95,7 @@
       right: 0;
       bottom: 0;
       border-left: 16px transparent solid;
-      border-bottom: 16px #e6553b solid;
+      border-bottom: 16px solid $primary;
     }
   }
 }
