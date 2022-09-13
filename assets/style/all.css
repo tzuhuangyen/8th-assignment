@@ -13122,6 +13122,43 @@ ul {
   z-index: 1;
 }
 
+.img-hover-artwork {
+  position: relative;
+}
+
+.img-hover-artwork:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-hover-artwork:hover .text-hover {
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  z-index: 1;
+}
+
+.img-hover-artwork:hover .moreBtn {
+  display: block;
+  z-index: 1;
+}
+
 .ff-squada {
   font-family: "squada One";
   font-size: 16px;
@@ -13287,6 +13324,16 @@ h1, .h1 {
   z-index: 1;
 }
 
+.artist .card {
+  height: 450px;
+}
+
+@media (min-width: 992px) {
+  .artist .card {
+    height: 500px;
+  }
+}
+
 .artist .swiper-slide-active {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
@@ -13311,19 +13358,21 @@ h1, .h1 {
 }
 
 .img-hover-artist .artist-name {
-  top: 24px;
-  left: 24px;
+  top: 44px;
+  left: 44px;
   display: none;
 }
 
 .img-hover-artist .moreBtn {
   bottom: 8px;
-  right: 8px;
+  right: 54px;
   display: none;
 }
 
 .artist .swiper-pagination {
-  position: initial;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .artist .swiper-pagination-bullet {
@@ -13334,6 +13383,27 @@ h1, .h1 {
 .artist .swiper-pagination-bullet-active {
   background-color: #e6553b;
   width: 16px;
+}
+
+@media (min-width: 992px) {
+  .artwork .card-body {
+    border-bottom: 1px solid black;
+  }
+}
+
+.artwork .text-hover {
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+
+.artwork .moreBtn {
+  width: 130px;
+  height: 35px;
+  padding: 8px 12px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
 }
 
 /*# sourceMappingURL=all.css.map */
