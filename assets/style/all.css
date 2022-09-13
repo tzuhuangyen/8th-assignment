@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Squada+One&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Paytone+One&display=swap";
@@ -13009,11 +13010,55 @@ ul {
   border-bottom: 16px black solid;
 }
 
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*  三角  */
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid #e6553b;
+  border-top: 10px solid transparent;
+  display: none;
+}
+
 .img-hover {
+  position: relative;
   background-color: #000;
 }
 
 .img-hover:hover::after {
+  content: "MORE";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-hover:hover .triangle {
+  display: block;
+  z-index: 1;
+}
+
+.img-hover-md {
+  position: relative;
+  background-color: #000;
+}
+
+.img-hover-md:hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -13032,6 +13077,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.img-hover-md:hover .moreBtn {
+  display: block;
+  z-index: 1;
 }
 
 .ff-squada {
@@ -13081,6 +13131,10 @@ h1, .h1 {
   position: relative;
 }
 
+.navbar .navbar-toggler .close-icon {
+  display: none;
+}
+
 .navbar-nav {
   position: absolute;
   left: 0;
@@ -13111,6 +13165,11 @@ h1, .h1 {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 45px 48px;
   }
+}
+
+.navbar .searchForm {
+  width: 279px;
+  display: none;
 }
 
 .banner .title {

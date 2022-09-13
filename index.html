@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NFT 藝術家</title>
+    <!-- fontawesome icon -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
@@ -16,7 +20,7 @@
     <section class="mb-lg-6 header bg-light">
       <div class="container">
         <nav
-          class="navbar navbar-expand-lg navbar-light d-flex justify-content-between"
+          class="navbar navbar-expand-lg navbar-light d-flex justify-content-between position-relative"
         >
           <!-- logo -->
           <h1>
@@ -24,8 +28,27 @@
               ><img src="./assets/images/logo.svg" alt=""
             /></a>
           </h1>
-          <!-- menu btn+ dropdown menu -->
-          <div>
+          <!-- search欄位+menu btn+ dropdown menu -->
+          <div class="d-flex justify-conten-center align-items-center">
+            <!-- 手機版search icon -->
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass search-icon d-md-none"></i>
+            </a>
+            <!-- 手機版search欄位 -->
+            <div
+              class="searchForm d-none position-absolute top-0 start-0 d-flex justify-conten-center align-items-center"
+            >
+              <!-- 左邊箭頭 -->
+              <i class="fa-solid fa-angle-left pe-3"></i>
+              <form class="d-flex">
+                <input
+                  class="form-control p-0"
+                  type="search"
+                  placeholder="搜尋作品名稱、藝術家名稱"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
             <!-- menu btn -->
             <button
               class="navbar-toggler"
@@ -37,52 +60,54 @@
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
+              <i class="fa-solid fa-xmark fa-xl close-icon"></i>
             </button>
-            <!-- dropdown menu -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul
-                class="navbar-nav mb-2 mb-lg-0 d-flex align-items-lg-center bg-light"
+          </div>
+
+          <!-- dropdown menu -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-flex align-items-lg-center bg-light"
+            >
+              <!-- search+icon -->
+              <li
+                class="nav-item d-flex align-lg-center d-none d-md-none d-lg-block"
               >
-                <!-- search+icon -->
-                <li
-                  class="nav-item d-flex align-lg-center d-none d-lg-block d-md-none"
-                >
-                  <form class="d-flex">
-                    <input
-                      class="form-control"
-                      type="search"
-                      placeholder="搜尋作品名稱、藝術家名稱"
-                      aria-label="Search"
-                    />
-                    <button class="btn searchBtn" type="submit">
-                      <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </a>
-                    </button>
-                  </form>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">探索</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">市值</a>
-                </li>
-                <!-- 錢包icon -->
-                <li class="nav-item d-none d-sm-none d-lg-block">
-                  <a class="nav-link" href="#">
-                    <i class="fa-solid fa-wallet fs-3"></i>
-                  </a>
-                </li>
-                <!-- 按鈕錢包 -->
-                <li class="nav-item d-lg-none">
-                  <a class="nav-link" href="#">
-                    <button class="btn btn-primary btn-primary-link">
-                      連結錢包
-                    </button>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                <form class="d-flex">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="搜尋作品名稱、藝術家名稱"
+                    aria-label="Search"
+                  />
+                  <button class="btn searchBtn" type="submit">
+                    <a href="#">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">探索</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">市值</a>
+              </li>
+              <!-- 桌機錢包icon -->
+              <li class="nav-item d-none d-sm-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-wallet fs-3"></i>
+                </a>
+              </li>
+              <!-- 手機按鈕錢包 -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">
+                  <button class="btn btn-primary btn-primary-link">
+                    連結錢包
+                  </button>
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -192,9 +217,9 @@
       </div>
       <div class="moreBtn-border">MORE</div>
     </div>
-    <!-- big cards -->
+    <!-- 桌機big cards -->
     <div class="row mt-mb-7">
-      <!-- 第一名 -->
+      <!-- 桌機第一名 -->
       <div class="col-md-4 d-none d-md-block">
         <div class="card border-0">
           <div class="row m-0 d-lg-flex flex-lg-column">
@@ -202,28 +227,24 @@
               <div
                 class="card-header position-lg-relative p-0 d-flex align-items-center"
               >
-                <!-- 手機版排名號碼 -->
-                <div class="number fs-2 px-1 d-md-none">1</div>
-                <!-- hover後按鈕和遮罩fill -->
-                <!-- 作品照片１ -->
+              <!-- hover後按鈕顯示 -->
+              <a href="#" class="d-block img-hover-md">
+               <!-- 作品照片１ -->
                 <img
-                  src="./assets/images/art04.jpeg"
-                  class="ranking-img position-relative"
-                  style="object-position: top;"
-                  alt="散步遇到的女人"
-                />
-                <!-- 桌機版排名號碼 -->
-                <div
-                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-flex justify-content-center align-items-center"
-                >
-                  1
-                </div>
-                <!-- hover後按鈕顯示 -->
-                <a href="#" class="d-block img-hover position-absolute d-md-none"></a>
-                <a class="moreBtn btn-white position-absolute">
-                  MORE
-                </a>
-                
+               src="./assets/images/art04.jpeg"
+               class="ranking-img position-relative"
+               style="object-position: top;"
+               alt="散步遇到的女人"
+              />
+               <!-- 桌機版排名號碼 -->
+               <div
+                class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
+                   >1
+               </div>
+                <!-- hover後按鈕 -->
+                <div class="moreBtn btn-white position-absolute">
+                 MORE</div>
+              </a>
               </div>
             </div>
             <div class="col-9 col-md-12 p-0 border border-top-0">
@@ -234,7 +255,7 @@
                   散步遇到的女人
                 </h5>
                 <div
-                  class="card-text d-flex justify-content-between py-lg-1 p-3"
+                  class="card-text d-flex justify-content-between py-lg-1 p-3 ff-squada "
                 >
                   <p>Zoe Jiang</p>
                   <div>
@@ -247,31 +268,29 @@
           </div>
         </div>
       </div>
-      <!-- 第2名 -->
+      <!-- 桌機第2名 -->
       <div class="col-md-4 mb-4 d-none d-md-block">
         <div class="card border-0">
           <div class="row m-0 d-lg-flex flex-lg-column">
+              <!-- 作品2 -->
             <div class="col-3 col-md-12 p-0 border border-bottom-0">
               <div class="card-header p-0 d-flex align-items-center">
-                <!-- 手機版排名號碼 -->
-                <div class="number fs-2 px-1 d-md-none">2</div>
-
-                <!-- 作品2 -->
-                <img
+                <a href="#" class="d-block img-hover-md">
+                  <img
                   src="./assets/images/art05.jpeg"
                   class="ranking-img position-relative"
                   alt="爆炸頭的母親"
                 />
-                <!-- 桌機版排名號碼 -->
-                <div
-                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-flex justify-content-center align-items-center"
+                 <!-- 桌機版排名號碼 -->
+                 <div
+                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
                 >
                   2
-                </div>
-                <!-- hover後按鈕 -->
-                <button class="moreBtn btn-white position-absolute">
-                  MORE
-                </button>
+                 </div>
+                 <!-- hover後按鈕 -->
+                 <div class="moreBtn btn-white position-absolute">
+                  MORE</div>
+               </a>
               </div>
             </div>
             <div class="col-9 col-md-12 p-0 border border-top-0">
@@ -282,7 +301,7 @@
                   爆炸頭的母親
                 </h5>
                 <div
-                  class="card-text d-flex justify-content-between py-lg-1 p-3"
+                  class="card-text d-flex justify-content-between py-lg-1 p-3 ff-squada "
                 >
                   <p>Yui</p>
                   <div>
@@ -295,32 +314,31 @@
           </div>
         </div>
       </div>
+      
       <!-- 第三名 -->
       <div class="col-md-4 mb-4 d-none d-md-block">
         <div class="card border-0">
           <div class="row m-0 d-lg-flex flex-lg-column">
             <div class="col-3 col-md-12 p-0 border border-bottom-0">
               <div class="card-header p-0 d-flex align-items-center">
-                <!-- 手機版排名號碼 -->
-                <div class="number fs-2 px-1 d-md-none">3</div>
-
                 <!-- 作品3 -->
-                <img
+                <a href="#" class="d-block img-hover-md">
+                  <img
                   src="./assets/images/art06.jpeg"
                   class="ranking-img position-relative"
                   alt="夏天的時候"
                 />
                 <!-- 桌機版排名號碼 -->
                 <div
-                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-flex justify-content-center align-items-center"
+                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
                 >
                   3
                 </div>
                 <!-- hover後按鈕 -->
-                <button class="moreBtn btn-white position-absolute">
-                  MORE
-                </button>
+                <div class="moreBtn btn-white position-absolute">
+                  MORE</div>
               </div>
+                </a>
             </div>
             <div class="col-9 col-md-12 p-0 border border-top-0">
               <div class="card-body p-0">
@@ -330,7 +348,7 @@
                   夏天的時候
                 </h5>
                 <div
-                  class="card-text d-flex justify-content-between py-lg-1 p-3"
+                  class="card-text d-flex justify-content-between py-lg-1 p-3 ff-squada "
                 >
                   <p>Bug Lin</p>
                   <div>
@@ -344,8 +362,9 @@
         </div>
       </div>
 
-      <!-- small cards -->
+   <!-- small cards -->
       <!-- 手機版第一名～第六名 -->
+        <!-- 第1名 -->
       <div class="d-md-none mb-3">
         <div class="card">
           <div class="row g-0">
@@ -354,12 +373,15 @@
                 class="card-header p-0 border-0 d-flex align-items-center h-100"
               >
                 <div class="number-smallCard px-3 fs-3">1</div>
+                <!-- hover後遮罩 -->
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art04.jpeg"
                     class="img-fluid"
                     alt="散步遇到的女人"
                   />
+                  <!-- hover後橘色三角形 -->
+                  <div class="triangle"></div>
                 </a>
               </div>
             </div>
@@ -382,6 +404,7 @@
           </div>
         </div>
       </div>
+       <!-- 第2名 -->
       <div class="d-md-none mb-3">
         <div class="card">
           <div class="row g-0">
@@ -396,6 +419,8 @@
                     class="img-fluid"
                     alt="爆炸頭的母親"
                   />
+                   <!-- hover後橘色三角形 -->
+                   <div class="triangle"></div>
                 </a>
               </div>
             </div>
@@ -418,6 +443,7 @@
           </div>
         </div>
       </div>
+      <!-- 第3名 -->
       <div class="d-md-none mb-3">
         <div class="card">
           <div class="row g-0">
@@ -432,6 +458,8 @@
                     class="img-fluid"
                     alt="夏天的時候"
                   />
+                   <!-- hover後橘色三角形 -->
+                   <div class="triangle"></div>
                 </a>
               </div>
             </div>
@@ -467,8 +495,10 @@
                   <img
                     src="./assets/images/art13.jpeg"
                     class="img-fluid"
-                    alt="..."
+                    alt="追求者送我的花"
                   />
+                   <!-- hover後橘色三角形 -->
+                   <div class="triangle"></div>
                 </a>
               </div>
             </div>
@@ -504,8 +534,10 @@
                   <img
                     src="./assets/images/art07.jpeg"
                     class="img-fluid"
-                    alt="..."
+                    alt="今天釣到的魚"
                   />
+                   <!-- hover後橘色三角形 -->
+                   <div class="triangle"></div>
                 </a>
               </div>
             </div>
@@ -541,8 +573,10 @@
                   <img
                     src="./assets/images/art08.jpeg"
                     class="img-fluid"
-                    alt="..."
+                    alt="人生中的貓咪們"
                   />
+                   <!-- hover後橘色三角形 -->
+                   <div class="triangle"></div>
                 </a>
               </div>
             </div>
@@ -782,18 +816,20 @@
       © ART NFT. All Rights Reserved
     </footer>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-
+    <!-- jquery -->
     <script
-      src="https://kit.fontawesome.com/a9ce70e31b.js"
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
+    <!-- 瀑布流 -->
     <script
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
       integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
       crossorigin="anonymous"
       async
     ></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
   </body>
 </html>
