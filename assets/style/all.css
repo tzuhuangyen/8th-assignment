@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Squada+One&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Paytone+One&display=swap";
+@import "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12921,6 +12922,7 @@ ul {
 
 body {
   font-family: "Noto Sans TC", "Paytone One", "Squada One";
+  background-color: #f0f0f0;
 }
 
 img {
@@ -13084,6 +13086,42 @@ ul {
   z-index: 1;
 }
 
+.img-hover-artist {
+  position: relative;
+  background-color: #000;
+}
+
+.img-hover-artist:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-hover-artist:hover .moreBtn {
+  display: block;
+  z-index: 1;
+}
+
+.img-hover-artist:hover .artist-name {
+  display: block;
+  z-index: 1;
+}
+
 .ff-squada {
   font-family: "squada One";
   font-size: 16px;
@@ -13191,18 +13229,16 @@ h1, .h1 {
 
 .banner .bannerCardImg {
   width: 100%;
-  height: 372px;
-}
-
-@media (min-width: 768px) {
-  .banner .bannerCardImg {
-    width: 329px;
-    height: 340px;
-  }
 }
 
 .banner .bannerCardBody {
-  padding: 48px 24px 24px 24px;
+  height: 341px;
+}
+
+@media (min-width: 992px) {
+  .banner .bannerCardBody {
+    padding: 48px 24px 24px 24px;
+  }
 }
 
 .ranking .ranking-img {
@@ -13249,6 +13285,55 @@ h1, .h1 {
 .ranking-img:hover .moreBtn {
   display: block;
   z-index: 1;
+}
+
+.artist .swiper-slide-active {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 2;
+}
+
+.artist .swiper-slide .swiper-slide-prev {
+  margin-left: -100px;
+  margin-right: 100px;
+  width: 25%;
+}
+
+.artist .swiper-slide .swiper-slide-next {
+  margin-left: 100px;
+  width: 25%;
+}
+
+.artist-img {
+  width: 100%;
+  height: 232px;
+}
+
+.img-hover-artist .artist-name {
+  top: 24px;
+  left: 24px;
+  display: none;
+}
+
+.img-hover-artist .moreBtn {
+  bottom: 8px;
+  right: 8px;
+  display: none;
+}
+
+.artist .swiper-pagination {
+  position: initial;
+}
+
+.artist .swiper-pagination-bullet {
+  opacity: initial;
+  border-radius: 0;
+}
+
+.artist .swiper-pagination-bullet-active {
+  background-color: #e6553b;
+  width: 16px;
 }
 
 /*# sourceMappingURL=all.css.map */

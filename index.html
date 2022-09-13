@@ -20,7 +20,7 @@
     <section class="mb-lg-6 header bg-light">
       <div class="container">
         <nav
-          class="navbar navbar-expand-lg navbar-light d-flex justify-content-between position-relative"
+          class="navbar navbar-expand-lg navbar-light d-flex justify-content-between"
         >
           <!-- logo -->
           <h1>
@@ -29,11 +29,9 @@
             /></a>
           </h1>
           <!-- search欄位+menu btn+ dropdown menu -->
-          <div class="d-flex justify-conten-center align-items-center">
-            <!-- 手機版search icon -->
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass search-icon d-md-none"></i>
-            </a>
+          <div
+            class="position-relative d-flex justify-conten-center align-items-center"
+          >
             <!-- 手機版search欄位 -->
             <div
               class="searchForm d-none position-absolute top-0 start-0 d-flex justify-conten-center align-items-center"
@@ -49,6 +47,10 @@
                 />
               </form>
             </div>
+            <!-- 手機版search icon -->
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass search-icon d-lg-none"></i>
+            </a>
             <!-- menu btn -->
             <button
               class="navbar-toggler"
@@ -115,7 +117,7 @@
 
     
 <section class="banner">
-  <div class="container">
+  <div class="container-lg px-0 px-lg-2">
     <ul class="d-flex flex-md-row flex-column">
       <li class="title text-light pt-3 px-4 d-none d-md-block">
         <h2 class="fs-1">Recommend<span class="fs-4">推 薦 系 列</span></h2>
@@ -155,7 +157,7 @@
                 <p class="card-text">
                   海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
                 </p>
-                <div class="d-block text-end mt-8">
+                <div class="d-block text-end mt-md-6">
                   <button class="moreBtn btn-white">MORE</button>
                 </div>
               </div>
@@ -164,8 +166,8 @@
             <div class="col-md-6 col-12">
               <img
                 src="./assets/images/art02.jpeg"
-                class="img-fluid rounded-start bannerCardImg"
-                alt="..."
+                class="img-fluid rounded-start bannerCardImg h-100"
+                alt="海洋的奧秘"
               />
             </div>
           </div>
@@ -173,27 +175,29 @@
       </div>
       <!-- 第二張卡片區 -->
       <div class="col-lg-6">
-        <div class="card mb-3">
+        <div class="card mb-md-3">
           <div
             class="row g-0 flex-column-reverse flex-sm-column-reverse flex-md-row"
           >
-            <div class="col-md-6">
+            <!-- 卡片左內容 -->
+            <div class="col-md-6 col-12">
               <div class="card-body bannerCardBody">
                 <span class="fs-5 mb-md-1">Michael </span>
                 <h5 class="card-title fs-2 fw-bold mb-md-4">我家窗前的鳥</h5>
                 <p class="card-text">
                   家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
                 </p>
-                <div class="d-block text-end mt-6">
+                <div class="d-block text-end mt-lg-6">
                   <button class="moreBtn btn-white">MORE</button>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <!-- 卡片右圖片 -->
+            <div class="col-md-6 col-12">
               <img
                 src="./assets/images/art21.jpeg"
-                class="img-fluid rounded-start bannerCardImg"
-                alt="..."
+                class="img-fluid rounded-start bannerCardImg h-100"
+                alt="海洋的奧秘"
               />
             </div>
           </div>
@@ -605,11 +609,91 @@
   <!-- end of section-->
 </section>
 
-
-
-<section class="artist">
+<section class="artist mb-6">
   <div class="container">
-
+     <!-- title -->
+     <div
+class="mb-4 d-flex justify-content-between align-items-end border-bottom"
+>
+  <h2 class="fs-1 me-3">Artist</h2>
+  <p class="fs-4 fw-bold d-none d-md-block">熱門藝術家</p>
+<div class="moreBtn-border">MORE</div>
+     </div>
+    <!-- Swiper -->
+  <div class="swiper artistSwiper">
+   <div class="swiper-wrapper">
+   <!-- slide 1 -->
+    <div class="swiper-slide ms-3 mb-3">
+      <div class="card border-0 bg-transparent">
+        <div class="card-header position-relative border-0 mb-3 p-0">
+          <a href="#" class="img-hover-artist">
+            <img src="./assets/images/artist01.jpeg" class="card-img-top artist-img" alt="artist">
+            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Michael</h3>
+            <button class="moreBtn  btn-white position-absolute">MORE</button>
+          </a>
+        </div>
+        
+        <div class="card-body p-4">
+          <p class="card-text">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide mb-3">
+      <div class="card border-0 bg-transparent">
+        <div class="card-header position-relative border-0 mb-3 p-0">
+          <a href="#" class="img-hover-artist">
+            <img src="./assets/images/artist02.jpeg" class="card-img-top artist-img" alt="artist">
+            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Antony Wu</h3>
+            <button class="moreBtn  btn-white position-absolute">MORE</button>
+          </a>
+         
+        </div>
+        
+        <div class="card-body p-4">
+          <p class="card-text">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide mb-3">
+      <div class="card border-0 bg-transparent">
+        <div class="card-header position-relative border-0 mb-3 p-0">
+          <a href="#" class="img-hover-artist">
+            <img src="./assets/images/artist03.jpeg" class="card-img-top artist-img" alt="artist">
+            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Antony Wu</h3>
+            <button class="moreBtn  btn-white position-absolute">MORE</button>
+          </a>
+         
+        </div>
+        
+        <div class="card-body p-4">
+          <p class="card-text">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide mb-3">
+      <div class="card border-0 bg-transparent">
+        <div class="card-header position-relative border-0 mb-3 p-0">
+          <a href="#" class="img-hover-artist">
+            <img src="./assets/images/artist05.jpeg" class="card-img-top artist-img" alt="artist">
+            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Antony Wu</h3>
+            <button class="moreBtn  btn-white position-absolute">MORE</button>
+          </a>
+         
+        </div>
+        
+        <div class="card-body p-4">
+          <p class="card-text">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  <div class="swiper-pagination swiper-pagination-pagination-bullet "></div>
+    </div>
   </div>
 </section>
 
@@ -822,6 +906,8 @@
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- 瀑布流 -->
     <script
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
