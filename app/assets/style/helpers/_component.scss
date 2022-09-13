@@ -139,7 +139,7 @@
   }
 }
 
-// 桌機版遮罩
+// 桌機版 ranking遮罩+ btn
 .img-hover-md {
   position: relative;
   background-color: #000;
@@ -157,6 +157,70 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .moreBtn {
+      display: block;
+      z-index: 1;
+    }
+  }
+}
+
+// artist遮罩
+.img-hover-artist {
+  position: relative;
+  background-color: #000;
+
+  &:hover {
+    //  遮罩
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.5;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .moreBtn {
+      display: block;
+      z-index: 1;
+    }
+    .artist-name {
+      display: block;
+      z-index: 1;
+    }
+  }
+}
+
+//artwork 遮罩
+.img-hover-artwork {
+  position: relative;
+
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.5;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-hover {
+      font-size: 12px;
+      color: #fff;
+      display: block;
+      z-index: 1;
     }
     .moreBtn {
       display: block;

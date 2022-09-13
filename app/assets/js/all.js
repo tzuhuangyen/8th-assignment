@@ -26,3 +26,23 @@ $(document).ready(function () {
     $(".close-icon").toggle();
   });
 });
+
+// artist swiper
+// <!-- Initialize Swiper -->
+
+var swiper = new Swiper(".artistSwiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+
+  slidesPerView: 1,
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
