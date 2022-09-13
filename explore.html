@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NFT 藝術家</title>
+    <!-- fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <!-- navBar -->
+        <nav
+          class="container navbar position-relative navbar-expand-lg navbar-light d-flex align-items-center justify-content-between">
+          <!-- logo -->
+          <h1 class="my-3 position-absolute">
+            <a class="navbar-brand p-0" href="./index.html"
+              ><img src="./assets/images/logo.svg" alt=""
+            /></a>
+          </h1>
+          <!-- nav & dropdown menu -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav border-bottom d-flex align-items-lg-center bg-light"
+            >
+              <!-- search+icon -->
+              <li
+                class="nav-item d-flex align-lg-center d-none d-md-none d-lg-block"
+              >
+                <form class="d-flex">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="搜尋作品名稱、藝術家名稱"
+                    aria-label="Search"
+                  />
+                  <button class="btn searchBtn" type="submit">
+                    <a href="#">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./explore.html"
+                  >探索</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">市值</a>
+              </li>
+              <!-- 桌機錢包icon -->
+              <li class="nav-item d-none d-sm-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-wallet fs-3"></i>
+                </a>
+              </li>
+              <!-- 手機按鈕錢包 -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">
+                  <button class="btn btn-primary btn-primary-link">
+                    連結錢包
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+           <!-- 手機 search欄位+icon+menu -->
+           <div
+           class="d-lg-none position-absolute top-50 end-0 translate-middle-y d-flex justify-conten-center align-items-center"
+         >
+           <!-- 手機版search欄位 -->
+           <div
+             class="searchForm d-none position-absolute d-flex justify-conten-center align-items-center"
+           >
+             <!-- 左邊箭頭 -->
+             <i class="fa-solid fa-angle-left pe-3"></i>
+             <form class="d-flex">
+               <input
+                 class="form-control p-0"
+                 type="search"
+                 placeholder="搜尋作品名稱、藝術家名稱"
+                 aria-label="Search"
+               />
+             </form>
+           </div>
+           <!-- 手機版search icon -->
+           <a href="#">
+             <i class="fa-solid fa-magnifying-glass search-icon d-lg-none"></i>
+           </a>
+           <!-- menu btn -->
+           <button
+             class="navbar-toggler"
+             type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent"
+             aria-expanded="false"
+             aria-label="Toggle navigation"
+           >
+             <span class="navbar-toggler-icon"></span>
+             <i class="fa-solid fa-xmark fa-xl close-icon"></i>
+           </button>
+         </div>
+        </nav>
+    
+    </section>
+
+    
+<!-- artwork瀑布流 -->
+<section class="artwork pt-6 mb-6 mb-lg-9">
+  <div class="container">
+    <div
+      class="row fw-bold"
+      data-masonry='{"percentPosition": true }'
+      style="position: relative; height: 774px"
+    >
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art09.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art10.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art15.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art11.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art23.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art24.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art25.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art26.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art27.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art28.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art29.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-3 mb-lg-7"
+        style="position: absolute; left: 0%; top: 0px"
+      >
+        <div class="artwork-card border-0">
+          <div
+            class="card-header p-1 p-lg-4 border-0 bg-white position-relative"
+          >
+            <a href="#" class="img-hover-artwork">
+              <img
+                src="./assets/images/art30.jpeg"
+                alt="區塊戀-他的私生活"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <p class="text-hover position-absolute">
+                唯一想擁有的人，唯一不可以擁有的
+                <i class="fa-brands fa-ethereum"></i>
+                <span>300</span>
+              </p>
+
+              <div class="moreBtn btn-white position-absolute">MORE</div>
+            </a>
+          </div>
+          <div class="card-body p-1 p-lg-3 bg-light">
+            <h5 class="card-title m-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bottom line -->
+  <div class="mb-1 border-bottom border-4">
+    <hr class="mb-1" />
+  </div>
+</section>
+
+
+    <footer class="footer bg-light text-center py-5">
+      © ART NFT. All Rights Reserved
+    </footer>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- 瀑布流 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

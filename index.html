@@ -17,59 +17,19 @@
   </head>
 
   <body>
-    <section class="mb-lg-6 header bg-light">
-      <div class="container">
+    <!-- navBar -->
         <nav
-          class="navbar navbar-expand-lg navbar-light d-flex justify-content-between"
-        >
+          class="container navbar position-relative navbar-expand-lg navbar-light d-flex align-items-center justify-content-between">
           <!-- logo -->
-          <h1>
-            <a class="navbar-brand" href="#"
+          <h1 class="my-3 position-absolute">
+            <a class="navbar-brand p-0" href="./index.html"
               ><img src="./assets/images/logo.svg" alt=""
             /></a>
           </h1>
-          <!-- search欄位+menu btn+ dropdown menu -->
-          <div
-            class="position-relative d-flex justify-conten-center align-items-center"
-          >
-            <!-- 手機版search欄位 -->
-            <div
-              class="searchForm d-none position-absolute top-0 start-0 d-flex justify-conten-center align-items-center"
-            >
-              <!-- 左邊箭頭 -->
-              <i class="fa-solid fa-angle-left pe-3"></i>
-              <form class="d-flex">
-                <input
-                  class="form-control p-0"
-                  type="search"
-                  placeholder="搜尋作品名稱、藝術家名稱"
-                  aria-label="Search"
-                />
-              </form>
-            </div>
-            <!-- 手機版search icon -->
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass search-icon d-lg-none"></i>
-            </a>
-            <!-- menu btn -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-              <i class="fa-solid fa-xmark fa-xl close-icon"></i>
-            </button>
-          </div>
-
-          <!-- dropdown menu -->
+          <!-- nav & dropdown menu -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
-              class="navbar-nav mb-2 mb-lg-0 d-flex align-items-lg-center bg-light"
+              class="navbar-nav border-bottom d-flex align-items-lg-center bg-light"
             >
               <!-- search+icon -->
               <li
@@ -90,7 +50,9 @@
                 </form>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">探索</a>
+                <a class="nav-link" aria-current="page" href="./explore.html"
+                  >探索</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">市值</a>
@@ -111,13 +73,51 @@
               </li>
             </ul>
           </div>
+           <!-- 手機 search欄位+icon+menu -->
+           <div
+           class="d-lg-none position-absolute top-50 end-0 translate-middle-y d-flex justify-conten-center align-items-center"
+         >
+           <!-- 手機版search欄位 -->
+           <div
+             class="searchForm d-none position-absolute d-flex justify-conten-center align-items-center"
+           >
+             <!-- 左邊箭頭 -->
+             <i class="fa-solid fa-angle-left pe-3"></i>
+             <form class="d-flex">
+               <input
+                 class="form-control p-0"
+                 type="search"
+                 placeholder="搜尋作品名稱、藝術家名稱"
+                 aria-label="Search"
+               />
+             </form>
+           </div>
+           <!-- 手機版search icon -->
+           <a href="#">
+             <i class="fa-solid fa-magnifying-glass search-icon d-lg-none"></i>
+           </a>
+           <!-- menu btn -->
+           <button
+             class="navbar-toggler"
+             type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent"
+             aria-expanded="false"
+             aria-label="Toggle navigation"
+           >
+             <span class="navbar-toggler-icon"></span>
+             <i class="fa-solid fa-xmark fa-xl close-icon"></i>
+           </button>
+         </div>
         </nav>
-      </div>
+    
     </section>
 
     
-<section class="banner">
+<section class="banner mt-6">
   <div class="container-lg px-0 px-lg-2">
+    <!-- banner -->
     <ul class="d-flex flex-md-row flex-column">
       <li class="title text-light pt-3 px-4 d-none d-md-block">
         <h2 class="fs-1">Recommend<span class="fs-4">推 薦 系 列</span></h2>
@@ -187,7 +187,7 @@
                 <p class="card-text">
                   家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
                 </p>
-                <div class="d-block text-end mt-lg-6">
+                <div class="d-block text-end mt-md-6">
                   <button class="moreBtn btn-white">MORE</button>
                 </div>
               </div>
@@ -195,7 +195,7 @@
             <!-- 卡片右圖片 -->
             <div class="col-md-6 col-12">
               <img
-                src="./assets/images/art21.jpeg"
+                src="./assets/images/art02.jpeg"
                 class="img-fluid rounded-start bannerCardImg h-100"
                 alt="海洋的奧秘"
               />
@@ -609,6 +609,7 @@
   <!-- end of section-->
 </section>
 
+<!-- swiper作家artist -->
 <section class="artist mb-6">
   <div class="container">
     <!-- title -->
@@ -639,7 +640,7 @@
         </div>
         
         <div class="card-body p-4">
-          <p class="card-text">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​</p>
+          <p class="card-text">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作...​</p>
           
         </div>
       </div>
@@ -1038,8 +1039,9 @@
       </div>
     </div>
    </div>
-   <div class=" mb-1 mb-md-3 text-center border-bottom border-4">
-    <hr class=" mb-1 mb-lg-9">
+    <!-- bottom line -->
+  <div class="mb-1 border-bottom border-4">
+    <hr class="mb-1" />
   </div>
 </section>
 
