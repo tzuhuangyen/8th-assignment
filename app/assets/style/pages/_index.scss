@@ -59,24 +59,22 @@
   }
 }
 
-.ranking{
+.ranking {
   .moreBtn {
     bottom: -1px;
     right: 0px;
     display: none;
+  }
 }
 
-  .ranking-img {
-    &:hover {
-    .img-hover{
+.ranking-img {
+  &:hover {
+    .img-hover {
       display: block;
     }
     .moreBtn {
-        display: block;
-        z-index: 1;
-      }
+      display: block;
+      z-index: 1;
     }
   }
-
-
-//熱門藝術家
+}
