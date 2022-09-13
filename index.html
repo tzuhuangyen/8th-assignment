@@ -192,22 +192,24 @@
       </div>
       <div class="moreBtn-border">MORE</div>
     </div>
-    <!-- cards -->
-    <div class="row mt-7">
-      <!-- cards -->
-      <div class="col-lg-4 mb-4">
+    <!-- big cards -->
+    <div class="row mt-mb-7">
+      <!-- 第一名 -->
+      <div class="col-md-4 d-none d-md-block">
         <div class="card border-0">
           <div class="row m-0 d-lg-flex flex-lg-column">
-            <!-- 第一名 -->
             <div class="col-3 col-md-12 p-0 border border-bottom-0">
-              <div class="card-header p-0 d-flex align-items-center">
+              <div
+                class="card-header position-lg-relative p-0 d-flex align-items-center"
+              >
                 <!-- 手機版排名號碼 -->
                 <div class="number fs-2 px-1 d-md-none">1</div>
-
-                <!-- 作品１ -->
+                <!-- hover後按鈕和遮罩fill -->
+                <!-- 作品照片１ -->
                 <img
                   src="./assets/images/art04.jpeg"
                   class="ranking-img position-relative"
+                  style="object-position: top;"
                   alt="散步遇到的女人"
                 />
                 <!-- 桌機版排名號碼 -->
@@ -216,10 +218,12 @@
                 >
                   1
                 </div>
-                <!-- hover後按鈕 -->
-                <button class="moreBtn btn-white position-absolute">
+                <!-- hover後按鈕顯示 -->
+                <a href="#" class="d-block img-hover position-absolute d-md-none"></a>
+                <a class="moreBtn btn-white position-absolute">
                   MORE
-                </button>
+                </a>
+                
               </div>
             </div>
             <div class="col-9 col-md-12 p-0 border border-top-0">
@@ -243,55 +247,109 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card">
-          <img
-            src="./assets/images/art05.jpeg"
-            class="card-img-top border-bottom ranking-img"
-            alt="..."
-          />
-          <div class="card-body p-0">
-            <h5 class="card-title fs-5 fw-bold p-3 m-0 border-bottom">
-              爆炸頭的母親
-            </h5>
-            <div class="card-text d-flex justify-content-between py-1 px-3">
-              <p>Yui</p>
-              <div>
-                <i class="fa-brands fa-ethereum"></i>
-                <span>300</span>
+      <!-- 第2名 -->
+      <div class="col-md-4 mb-4 d-none d-md-block">
+        <div class="card border-0">
+          <div class="row m-0 d-lg-flex flex-lg-column">
+            <div class="col-3 col-md-12 p-0 border border-bottom-0">
+              <div class="card-header p-0 d-flex align-items-center">
+                <!-- 手機版排名號碼 -->
+                <div class="number fs-2 px-1 d-md-none">2</div>
+
+                <!-- 作品2 -->
+                <img
+                  src="./assets/images/art05.jpeg"
+                  class="ranking-img position-relative"
+                  alt="爆炸頭的母親"
+                />
+                <!-- 桌機版排名號碼 -->
+                <div
+                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-flex justify-content-center align-items-center"
+                >
+                  2
+                </div>
+                <!-- hover後按鈕 -->
+                <button class="moreBtn btn-white position-absolute">
+                  MORE
+                </button>
+              </div>
+            </div>
+            <div class="col-9 col-md-12 p-0 border border-top-0">
+              <div class="card-body p-0">
+                <h5
+                  class="card-title fs-5 lh-sm fw-bold p-md-3 px-1 m-0 border-bottom"
+                >
+                  爆炸頭的母親
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-lg-1 p-3"
+                >
+                  <p>Yui</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card">
-          <img
-            src="./assets/images/art06.jpeg "
-            class="card-img-top border-bottom ranking-img"
-            alt="..."
-          />
-          <div class="card-body p-0">
-            <h5 class="card-title fs-5 fw-bold p-3 m-0 border-bottom">
-              夏天的時候
-            </h5>
-            <div class="card-text d-flex justify-content-between py-1 px-3">
-              <p>Bug Lin</p>
-              <div>
-                <i class="fa-brands fa-ethereum"></i>
-                <span>300</span>
+      <!-- 第三名 -->
+      <div class="col-md-4 mb-4 d-none d-md-block">
+        <div class="card border-0">
+          <div class="row m-0 d-lg-flex flex-lg-column">
+            <div class="col-3 col-md-12 p-0 border border-bottom-0">
+              <div class="card-header p-0 d-flex align-items-center">
+                <!-- 手機版排名號碼 -->
+                <div class="number fs-2 px-1 d-md-none">3</div>
+
+                <!-- 作品3 -->
+                <img
+                  src="./assets/images/art06.jpeg"
+                  class="ranking-img position-relative"
+                  alt="夏天的時候"
+                />
+                <!-- 桌機版排名號碼 -->
+                <div
+                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-flex justify-content-center align-items-center"
+                >
+                  3
+                </div>
+                <!-- hover後按鈕 -->
+                <button class="moreBtn btn-white position-absolute">
+                  MORE
+                </button>
+              </div>
+            </div>
+            <div class="col-9 col-md-12 p-0 border border-top-0">
+              <div class="card-body p-0">
+                <h5
+                  class="card-title fs-5 lh-sm fw-bold p-md-3 px-1 m-0 border-bottom"
+                >
+                  夏天的時候
+                </h5>
+                <div
+                  class="card-text d-flex justify-content-between py-lg-1 p-3"
+                >
+                  <p>Bug Lin</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>300</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- small cards -->
-    <!-- <div class="row">
+
+      <!-- small cards -->
+      <!-- 手機版第一名～第六名 -->
       <div class="d-md-none mb-3">
         <div class="card">
           <div class="row g-0">
-            <div class="col-md-4 col-4">
+            <div class="col-4">
               <div
                 class="card-header p-0 border-0 d-flex align-items-center h-100"
               >
@@ -299,13 +357,13 @@
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art04.jpeg"
-                    class="img-fluid ranking-smallCard-img"
+                    class="img-fluid"
                     alt="散步遇到的女人"
                   />
                 </a>
               </div>
             </div>
-            <div class="col-md-8 col-8">
+            <div class="col-8">
               <div class="card-body p-0">
                 <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
                   散步遇到的女人
@@ -335,7 +393,7 @@
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art05.jpeg"
-                    class="img-fluid ranking-smallCard-img"
+                    class="img-fluid"
                     alt="爆炸頭的母親"
                   />
                 </a>
@@ -371,7 +429,7 @@
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art06.jpeg"
-                    class="img-fluid ranking-smallCard-img"
+                    class="img-fluid"
                     alt="夏天的時候"
                   />
                 </a>
@@ -396,6 +454,7 @@
           </div>
         </div>
       </div>
+      <!-- 第四名 -->
       <div class="col-12 col-lg-4 mb-lg-9 mb-3">
         <div class="card">
           <div class="row g-0">
@@ -403,11 +462,11 @@
               <div
                 class="card-header p-0 border-0 d-flex align-items-center h-100"
               >
-                <div class="number-smallCard fs-3 px-md-3 px-1">4</div>
+                <div class="number-smallCard fs-3 px-md-3 px-3">4</div>
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art13.jpeg"
-                    class="img-fluid ranking-smallCard-img"
+                    class="img-fluid"
                     alt="..."
                   />
                 </a>
@@ -432,6 +491,7 @@
           </div>
         </div>
       </div>
+      <!-- 第五名 -->
       <div class="col-12 col-lg-4 mb-3">
         <div class="card">
           <div class="row g-0">
@@ -443,7 +503,7 @@
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art07.jpeg"
-                    class="img-fluid ranking-smallCard-img"
+                    class="img-fluid"
                     alt="..."
                   />
                 </a>
@@ -468,6 +528,7 @@
           </div>
         </div>
       </div>
+      <!-- 第六名 -->
       <div class="col-12 col-lg-4 mb-3">
         <div class="card">
           <div class="row g-0">
@@ -479,7 +540,7 @@
                 <a href="#" class="d-block img-hover">
                   <img
                     src="./assets/images/art08.jpeg"
-                    class="img-fluid ranking-smallCard-img"
+                    class="img-fluid"
                     alt="..."
                   />
                 </a>
@@ -504,34 +565,46 @@
           </div>
         </div>
       </div>
-    </div> -->
-
-    <!-- end of container div -->
+    </div>
   </div>
+  <!-- end of container div -->
   <!-- end of section-->
 </section>
 
-<!-- <div class="container">
-  Button 樣式：
-  <div>
-    <button class="moreBtn btn-white">MORE</button>
-    <button class="btn btn-primary">連結錢包</button>
-    <button class="moreBtn-border">無框 hover後 黑框 橘底</button>
-  </div>
-</div>
 
-<section class="artist"></section>
 
-瀑布流 -->
-<!-- <section class="artwork">
+<section class="artist">
   <div class="container">
+
+  </div>
+</section>
+
+
+
+
+
+<!-- 瀑布流 -->
+<section class="artwork">
+  <div class="container">
+     <!-- title -->
+     <div
+     class="mb-4 d-flex justify-content-between align-items-end border-bottom"
+   >
+     <div
+       class="d-flex justify-content-between align-items-baseline mb-1 mb-md-3"
+     >
+       <h2 class="fs-1 me-3">Artwork</h2>
+       <p class="fs-4 fw-bold d-none d-md-block">最新藝術品</p>
+     </div>
+     <div class="moreBtn-border">MORE</div>
+   </div>
+
     <div
       class="row"
       data-masonry='{"percentPosition": true }'
       style="position: relative; height: 774px"
     >
-      <div
-        class="col-sm-6 col-lg-3 mb-8"
+      <div class="col-sm-6 col-lg-3 mb-8"
         style="position: absolute; left: 0%; top: 0px"
       >
         <div class="card">
@@ -560,8 +633,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="col-sm-6 col-lg-3 mb-8"
+      <div class="col-sm-6 col-lg-3 mb-8"
         style="position: absolute; left: 33.3333%; top: 0px"
       >
         <div class="card p-3">
@@ -575,8 +647,7 @@
           </figure>
         </div>
       </div>
-      <div
-        class="col-sm-6 col-lg-3 mb-8"
+      <div class="col-sm-6 col-lg-3 mb-8"
         style="position: absolute; left: 66.6667%; top: 0px"
       >
         <div class="card">
@@ -607,8 +678,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="col-sm-6 col-lg-3 mb-8"
+      <div  class="col-sm-6 col-lg-3 mb-8"
         style="position: absolute; left: 33.3333%; top: 201px"
       >
         <div class="card bg-primary text-white text-center p-3">
@@ -695,8 +765,18 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
+
+
+<!-- <div class="container">
+  Button 樣式：
+  <div>
+    <button class="moreBtn btn-white">MORE</button>
+    <button class="btn btn-primary">連結錢包</button>
+    <button class="moreBtn-border">無框 hover後 黑框 橘底</button>
+  </div>
+</div>
 
     <footer class="footer bg-light text-center py-5">
       © ART NFT. All Rights Reserved
