@@ -69,13 +69,41 @@
 }
 
 //桌機 hover遮罩+moreBtn+橘色三角形
+// .img-hover {
+//   // padding: 8px 42px;
+//   // font-size: $h5-font-size; //18px
+//   // font-family: "squada One";
+//   // width: 140px;
+//   // position: relative;
+//   // border: 1px solid black;
+//   // position: absolute;
+//   // background-color: white;
+//   // &:after {
+//   //   // 橘色三角形
+//   //   content: "";
+//   //   position: absolute;
+//   //   right: 0;
+//   //   bottom: 0px;
+//   //   border-left: 16px transparent solid;
+//   //   border-bottom: 16px #e6553b solid;
+//   // }
+//   &:hover {
+//     background-color: #e6553b;
+//     color: white;
+//     &:after {
+//       // 橘色三角形
+//       border-left: 16px transparent solid;
+//       border-bottom: 16px black solid;
+//     }
+//   }
+// }
+
+// 桌機 hover遮罩
 .img-hover {
-  position: relative;
   background-color: #000;
   &:hover {
-    &:before {
+    &::after {
       content: "";
-      font-family: "squada One";
       position: absolute;
       top: 0;
       right: 0;
@@ -88,14 +116,9 @@
       justify-content: center;
       align-items: center;
     }
-    &:after {
-      // 橘色三角形
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      border-left: 16px transparent solid;
-      border-bottom: 16px solid $primary;
-    }
+    // .moreBtn {
+    //   display: block;
+    //   z-index: 1;
+    // }
   }
 }
