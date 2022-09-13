@@ -98,8 +98,50 @@
 //   }
 // }
 
-// 桌機 hover遮罩
+// 手機 hover遮罩
+// 橘色三角形
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  /*  三角  */
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid #e6553b;
+  border-top: 10px solid transparent;
+  display: none;
+}
+// 手機版遮罩
 .img-hover {
+  position: relative;
+  background-color: #000;
+  &:hover {
+    // more顯示
+    &::after {
+      content: "MORE";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.5;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .triangle {
+      display: block;
+      z-index: 1;
+    }
+  }
+}
+
+// 桌機版遮罩
+.img-hover-md {
+  position: relative;
   background-color: #000;
   &:hover {
     &::after {
@@ -116,9 +158,9 @@
       justify-content: center;
       align-items: center;
     }
-    // .moreBtn {
-    //   display: block;
-    //   z-index: 1;
-    // }
+    .moreBtn {
+      display: block;
+      z-index: 1;
+    }
   }
 }

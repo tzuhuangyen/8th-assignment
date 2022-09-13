@@ -29,6 +29,10 @@ h1 {
   .navbar-toggler {
     border: none;
     position: relative;
+
+    .close-icon {
+      display: none;
+    }
   }
 }
 
@@ -59,5 +63,12 @@ h1 {
   padding-bottom: 24px;
   @include media-breakpoint-up(md) {
     padding: 45px 48px;
+  }
+}
+
+.navbar {
+  .searchForm {
+    width: 279px;
+    display: none;
   }
 }
