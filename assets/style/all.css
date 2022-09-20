@@ -13158,19 +13158,12 @@ ul {
   color: black;
 }
 
-h1, .h1 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-h1 a, .h1 a {
-  width: 85px;
-}
-
 @media (min-width: 992px) {
-  h1 a, .h1 a {
+  h1 .navbar-brand, .h1 .navbar-brand {
     width: 190px;
-    height: 40px;
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -13180,7 +13173,7 @@ h1 a, .h1 a {
 
 @media (min-width: 992px) {
   .navbar {
-    height: 104px;
+    height: 100%;
   }
 }
 
@@ -13245,6 +13238,7 @@ h1 a, .h1 a {
 @media (min-width: 768px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 40px 32px;
+    font-style: 24px;
   }
 }
 
