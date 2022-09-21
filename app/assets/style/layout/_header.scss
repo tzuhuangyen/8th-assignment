@@ -5,12 +5,15 @@
     .navbar-brand {
       padding: 0;
       margin: 0;
+      background-image: url("../images/logo.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 85px;
       height: 18px;
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      display: block;
     }
   }
   @include media-breakpoint-up(lg) {
@@ -25,6 +28,19 @@
   }
 }
 
+// 手機版收尋欄位
+.searchForm {
+  background-color: #f0f0f0;
+  width: 279px;
+  top: 8px;
+  right: 65px;
+  border: none;
+}
+.fa-angle-left {
+  height: 12px;
+  margin-right: 16px;
+}
+
 .navbar {
   height: 50px;
   @include media-breakpoint-up(lg) {
@@ -34,6 +50,7 @@
   li {
     border-left: 1px solid black;
   }
+  // 桌機搜尋欄位
   .form-control {
     border: none;
     background-color: #f0f0f0;
@@ -41,6 +58,7 @@
     padding: 40px 0px 40px 46px;
   }
   .searchBtn {
+    padding: 0;
     @include media-breakpoint-up(lg) {
       padding-left: 24px;
       padding-right: 47px;
@@ -86,14 +104,5 @@
   @include media-breakpoint-up(md) {
     padding: 40px 32px;
     font-style: 24px;
-  }
-}
-
-// 手機版收尋欄位
-.navbar {
-  .searchForm {
-    width: 279px;
-    top: 8px;
-    right: 65px;
   }
 }

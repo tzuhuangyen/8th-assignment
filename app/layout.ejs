@@ -25,15 +25,36 @@
         >
           <!-- logo -->
           <h1>
-            <a class="navbar-brand" href="./index.html"
-              ><img src="./assets/images/logo.svg" alt="" />
-            </a>
+            <a class="navbar-brand" href="./index.html">NFT logo</a>
           </h1>
           <nav class="navbar navbar-expand-lg navbar-light py-0">
             <!-- nav & dropdown menu -->
-            <!-- menu btn -->
+            <!-- mobile 點擊search icon 後 search frame show -->
+            <div class="d-flex justify-content-between align-items-center">
+              <div
+                class="searchFrame d-none d-flex justify-content-between align-items-center"
+              >
+                <i class="fa-solid fa-angle-left"></i>
+                <form class="d-flex">
+                  <input
+                    class="searchForm"
+                    type="search"
+                    placeholder="搜尋作品名稱、藝術家名稱"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+              <!-- mobile search icon -->
+              <button class="btn searchBtn d-lg-none" type="submit">
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </button>
+            </div>
+
+            <!-- mobile menu btn -->
             <button
-              class="navbar-toggler d-md-none"
+              class="navbar-toggler d-lg-none"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -44,10 +65,12 @@
               <span class="navbar-toggler-icon"></span>
               <i class="fa-solid fa-xmark fa-xl close-icon"></i>
             </button>
+
+            <!-- mobile & lg dropdown -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav d-flex align-items-lg-center bg-light">
                 <!-- search+icon -->
-                <li class="nav-item d-flex align-lg-center">
+                <li class="nav-item d-flex align-lg-center d-none d-md-block">
                   <form class="d-flex">
                     <input
                       class="form-control"
