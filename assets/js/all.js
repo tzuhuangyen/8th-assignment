@@ -6,21 +6,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 $(function () {
   console.log("Hello Bootstrap5");
-}); //click 搜尋按鈕 search icon then h1& menu icon d-none then show search form
+}); //點擊搜尋按鈕 search icon後 h1& menu icon d-none then show search form
 
 $(document).ready(function () {
-  $(".search-icon").click(function (event) {
+  $(".searchBtn").click(function (event) {
     $("h1").toggle();
     $(".navbar-toggler-icon").toggle();
-    $(".searchForm").toggle();
+    $(".searchFrame").removeClass("d-none");
   });
-}); // click 左側（返回）按鈕icon
+}); // click 左側箭頭（返回）按鈕icon
 
 $(document).ready(function () {
   $(".fa-angle-left").click(function (event) {
     $("h1").toggle();
     $(".navbar-toggler-icon").toggle();
-    $(".searchForm").toggle();
+    $(".fa-angle-left").toggle();
   });
 }); //click 選單 icon then menu icon d-none & show close icon
 
