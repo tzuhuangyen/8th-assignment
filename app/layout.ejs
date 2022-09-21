@@ -17,9 +17,9 @@
   </head>
 
   <body>
-    <!-- navBar -->
     <section>
-      <header class="border-bottom">
+      <!-- navbar -->
+      <header class="header border-bottom">
         <div
           class="container d-flex justify-content-between align-items-center"
         >
@@ -31,12 +31,23 @@
           </h1>
           <nav class="navbar navbar-expand-lg navbar-light py-0">
             <!-- nav & dropdown menu -->
+            <!-- menu btn -->
+            <button
+              class="navbar-toggler d-md-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+              <i class="fa-solid fa-xmark fa-xl close-icon"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav d-flex align-items-lg-center bg-light">
                 <!-- search+icon -->
-                <li
-                  class="nav-item d-flex align-lg-center d-none d-md-none d-lg-block"
-                >
+                <li class="nav-item d-flex align-lg-center">
                   <form class="d-flex">
                     <input
                       class="form-control"
@@ -59,7 +70,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">市值</a>
                 </li>
-                <!-- 桌機錢包icon -->
+                <!-- 桌機 錢包icon -->
                 <li class="nav-item d-none d-sm-none d-lg-block">
                   <a class="nav-link" href="#">
                     <i class="fa-solid fa-wallet fs-3"></i>
@@ -74,45 +85,6 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <!-- 手機 search欄位+icon+menu -->
-            <div
-              class="d-lg-none position-absolute top-50 end-0 translate-middle-y d-flex justify-conten-center align-items-center"
-            >
-              <!-- 手機版search欄位 -->
-              <div
-                class="searchForm d-none position-absolute d-flex justify-conten-center align-items-center"
-              >
-                <!-- 左邊箭頭 -->
-                <i class="fa-solid fa-angle-left pe-3"></i>
-                <form class="d-flex">
-                  <input
-                    class="form-control p-0"
-                    type="search"
-                    placeholder="搜尋作品名稱、藝術家名稱"
-                    aria-label="Search"
-                  />
-                </form>
-              </div>
-              <!-- 手機版search icon -->
-              <a href="#">
-                <i
-                  class="fa-solid fa-magnifying-glass search-icon d-lg-none"
-                ></i>
-              </a>
-              <!-- menu btn -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-                <i class="fa-solid fa-xmark fa-xl close-icon"></i>
-              </button>
             </div>
           </nav>
         </div>
