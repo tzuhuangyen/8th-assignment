@@ -152,12 +152,12 @@
             <!-- 卡片左內容 -->
             <div class="col-md-6 col-12">
               <div class="card-body bannerCardBody">
-                <span class="fs-5 mb-md-1">Joanne </span>
-                <h5 class="card-title fs-2 fw-bold mb-md-4">海洋波度</h5>
+                <span class="fs-5 mb-1 mb-md-1">Joanne </span>
+                <h5 class="card-title fs-2 fw-bold mb-4 mb-md-4">海洋波度</h5>
                 <p class="card-text">
-                  海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
+                  海洋的奧秘向我們揭示了深不可測的一面，它<br>的深度——反映了我們的恐懼、同時也吸引著我們。
                 </p>
-                <div class="d-block text-end mt-md-6">
+                <div class="d-block text-end mt-4">
                   <button class="moreBtn btn-white">MORE</button>
                 </div>
               </div>
@@ -187,7 +187,7 @@
                 <p class="card-text">
                   家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
                 </p>
-                <div class="d-block text-end mt-md-6">
+                <div class="d-block text-end mt-4">
                   <button class="moreBtn btn-white">MORE</button>
                 </div>
               </div>
@@ -195,8 +195,8 @@
             <!-- 卡片右圖片 -->
             <div class="col-md-6 col-12">
               <img
-                src="./assets/images/art02.jpeg"
-                class="img-fluid rounded-start bannerCardImg h-100"
+                src="./assets/images/art21.jpeg"
+                class="img-fluid rounded-start bannerCardImg"
                 alt="海洋的奧秘"
               />
             </div>
@@ -221,401 +221,354 @@
       </div>
       <div class="moreBtn-border">MORE</div>
     </div>
-    <!-- 桌機big cards -->
-    <div class="row mt-mb-7">
-      <!-- 桌機第一名 -->
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card border-0">
+    <!-- big+small cards -->
+    <ul class="row mt-mb-7">
+      <!-- 第一名 big+small -->
+      <li class="col-md-4 mb-3">
+        <div class="card border border-black">
           <div class="row m-0 d-lg-flex flex-lg-column">
-            <div class="col-3 col-md-12 p-0 border border-bottom-0">
-              <div
-                class="card-header position-lg-relative p-0 d-flex align-items-center"
-              >
-              <!-- hover後按鈕顯示 -->
-              <a href="#" class="d-block img-hover-md">
-               <!-- 作品照片１ -->
-                <img
+            <!-- mobile number -->
+            <div class="col-1 col-lg-none p-0 fs-3">
+              <div class="d-flex align-items-center justify-content-center h-100 border-end">
+                <p>1</p>
+              </div>
+            </div>
+            <!-- picture -->
+            <div class="col-3 col-md-12 p-0">
+            
+                <!-- 作品照片小圖１ -->
+                <div class="d-md-none border-end">
+                  <a href="#" class="d-block img-hover ">
+                    <img
+                      src="./assets/images/art04.jpeg"
+                      class="img-fluid"
+                      alt="散步遇到的女人"
+                    />
+                    <!-- hover後橘色三角形 -->
+                    <div class="triangle"></div>
+                  </a>
+                </div>
+                
+                <!-- 作品照片大圖１ -->
+                <div class="d-none d-md-block  position-relative"> 
+                  <!-- 桌機版排名號碼 -->
+                 <div
+                 class="number fs-2 d-none d-md-block position-absolute p-lg-1 border-end border-bottom d-md-flex justify-content-md-center align-items-md-center"
+                   >1
+                 </div>
+                <a href="#" class="d-block img-hover-md">
+                 
+                 <img
                src="./assets/images/art04.jpeg"
                class="ranking-img position-relative"
                style="object-position: top;"
                alt="散步遇到的女人"
-              />
-               <!-- 桌機版排名號碼 -->
-               <div
-                class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
-                   >1
-               </div>
-                <!-- hover後按鈕 -->
-                <div class="moreBtn btn-white position-absolute">
-                 MORE</div>
-              </a>
-              </div>
-            </div>
-            <div class="col-9 col-md-12 p-0 border border-top-0">
-              <div class="card-body p-0">
-                <h5
-                  class="card-title fs-5 lh-sm fw-bold p-md-3 px-1 m-0 border-bottom"
-                >
-                  散步遇到的女人
-                </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-lg-1 p-3 ff-squada "
-                >
-                  <p>Zoe Jiang</p>
-                  <div>
-                    <i class="fa-brands fa-ethereum"></i>
-                    <span>300</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 桌機第2名 -->
-      <div class="col-md-4 mb-4 d-none d-md-block">
-        <div class="card border-0">
-          <div class="row m-0 d-lg-flex flex-lg-column">
-              <!-- 作品2 -->
-            <div class="col-3 col-md-12 p-0 border border-bottom-0">
-              <div class="card-header p-0 d-flex align-items-center">
-                <a href="#" class="d-block img-hover-md">
-                  <img
-                  src="./assets/images/art05.jpeg"
-                  class="ranking-img position-relative"
-                  alt="爆炸頭的母親"
-                />
-                 <!-- 桌機版排名號碼 -->
-                 <div
-                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
-                >
-                  2
-                 </div>
+                  />
+                 
                  <!-- hover後按鈕 -->
                  <div class="moreBtn btn-white position-absolute">
                   MORE</div>
-               </a>
-              </div>
-            </div>
-            <div class="col-9 col-md-12 p-0 border border-top-0">
-              <div class="card-body p-0">
-                <h5
-                  class="card-title fs-5 lh-sm fw-bold p-md-3 px-1 m-0 border-bottom"
-                >
-                  爆炸頭的母親
-                </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-lg-1 p-3 ff-squada "
-                >
-                  <p>Yui</p>
-                  <div>
-                    <i class="fa-brands fa-ethereum"></i>
-                    <span>300</span>
-                  </div>
+                 </a>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 第三名 -->
-      <div class="col-md-4 mb-4 d-none d-md-block">
-        <div class="card border-0">
-          <div class="row m-0 d-lg-flex flex-lg-column">
-            <div class="col-3 col-md-12 p-0 border border-bottom-0">
-              <div class="card-header p-0 d-flex align-items-center">
-                <!-- 作品3 -->
-                <a href="#" class="d-block img-hover-md">
-                  <img
-                  src="./assets/images/art06.jpeg"
-                  class="ranking-img position-relative"
-                  alt="夏天的時候"
-                />
-                <!-- 桌機版排名號碼 -->
-                <div
-                  class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
-                >
-                  3
-                </div>
-                <!-- hover後按鈕 -->
-                <div class="moreBtn btn-white position-absolute">
-                  MORE</div>
-              </div>
-                </a>
-            </div>
-            <div class="col-9 col-md-12 p-0 border border-top-0">
-              <div class="card-body p-0">
-                <h5
-                  class="card-title fs-5 lh-sm fw-bold p-md-3 px-1 m-0 border-bottom"
-                >
-                  夏天的時候
-                </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-lg-1 p-3 ff-squada "
-                >
-                  <p>Bug Lin</p>
-                  <div>
-                    <i class="fa-brands fa-ethereum"></i>
-                    <span>300</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-   <!-- small cards -->
-      <!-- 手機版第一名～第六名 -->
-        <!-- 第1名 -->
-      <div class="d-md-none mb-3">
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-4">
-              <div
-                class="card-header p-0 border-0 d-flex align-items-center h-100"
-              >
-                <div class="number-smallCard px-3 fs-3">1</div>
-                <!-- hover後遮罩 -->
-                <a href="#" class="d-block img-hover">
-                  <img
-                    src="./assets/images/art04.jpeg"
-                    class="img-fluid"
-                    alt="散步遇到的女人"
-                  />
-                  <!-- hover後橘色三角形 -->
-                  <div class="triangle"></div>
-                </a>
-              </div>
-            </div>
-            <div class="col-8">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+            <!-- content -->
+            <div class="col-8 col-md-12 p-0">
+              <div class="card-body py-3 px-1 border-bottom border-top-md">
+                <h5 class="fs-5 lh-sm fw-bold">
                   散步遇到的女人
                 </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
-                >
+              </div>
+              <div class="card-text d-flex justify-content-between py-lg-1 p-1 ff-squada ">
                   <p>Zoe Jiang</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-       <!-- 第2名 -->
-      <div class="d-md-none mb-3">
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-md-4 col-4">
-              <div
-                class="card-header p-0 border-0 d-flex align-items-center h-100"
-              >
-                <div class="number-smallCard px-3 fs-3">2</div>
-                <a href="#" class="d-block img-hover">
-                  <img
-                    src="./assets/images/art05.jpeg"
-                    class="img-fluid"
-                    alt="爆炸頭的母親"
-                  />
-                   <!-- hover後橘色三角形 -->
-                   <div class="triangle"></div>
-                </a>
+      </li>
+      <!-- 第2名big+small -->
+      <li class="col-md-4 mb-3">
+        <div class="card border border-black">
+          <div class="row m-0 d-lg-flex flex-lg-column">
+            <!-- mobile number -->
+            <div class="col-1 col-lg-none p-0 fs-3">
+              <div class="d-flex align-items-center justify-content-center h-100 border-end">
+                <p>2</p>
               </div>
             </div>
-            <div class="col-md-8 col-8">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+            <!-- picture -->
+            <div class="col-3 col-md-12 p-0">
+            
+                <!-- 作品照片小圖１ -->
+                <div class="d-md-none border-end">
+                  <a href="#" class="d-block img-hover ">
+                    <img
+                      src="./assets/images/art05.jpeg"
+                      class="img-fluid"
+                      alt="爆炸頭的母親"
+                    />
+                    <!-- hover後橘色三角形 -->
+                    <div class="triangle"></div>
+                  </a>
+                </div>
+                
+                <!-- 作品照片大圖１ -->
+                <div class="d-none d-md-block  position-relative"> 
+                  <!-- 桌機版排名號碼 -->
+                 <div
+                 class="number fs-2 d-none d-md-block position-absolute border-end border-bottom p-lg-1  d-md-flex justify-content-md-center align-items-md-center"
+                   >2
+                 </div>
+                   <a href="#" class="d-block img-hover-md">
+                 
+                 <img
+               src="./assets/images/art05.jpeg"
+               class="ranking-img position-relative"
+               style="object-position: top;"
+               alt="爆炸頭的母親"
+                  />
+                 
+                 <!-- hover後按鈕 -->
+                 <div class="moreBtn btn-white position-absolute">
+                  MORE</div>
+                 </a>
+                </div>
+                
+            
+            </div>
+            <!-- content -->
+            <div class="col-8 col-md-12 p-0">
+              <div class="card-body py-3 px-1 border-bottom border-top-md">
+                <h5 class="fs-5 lh-sm fw-bold">
                   爆炸頭的母親
                 </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
-                >
+              </div>
+              <div class="card-text d-flex justify-content-between py-lg-1 p-1 ff-squada ">
                   <p>Yui</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- 第3名 -->
-      <div class="d-md-none mb-3">
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-md-4 col-4">
-              <div
-                class="card-header p-0 border-0 d-flex align-items-center h-100"
-              >
-                <div class="number-smallCard px-3 fs-3">3</div>
-                <a href="#" class="d-block img-hover">
-                  <img
-                    src="./assets/images/art06.jpeg"
-                    class="img-fluid"
-                    alt="夏天的時候"
-                  />
-                   <!-- hover後橘色三角形 -->
-                   <div class="triangle"></div>
-                </a>
+      </li>
+      
+      <!-- 第三名 big+small-->
+      <li class="col-md-4 mb-3">
+        <div class="card border border-black">
+          <div class="row m-0 d-lg-flex flex-lg-column">
+            <!-- mobile number -->
+            <div class="col-1 col-lg-none p-0 fs-3">
+              <div class="d-flex align-items-center justify-content-center h-100 border-end">
+                <p>3</p>
               </div>
             </div>
-            <div class="col-md-8 col-8">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+            <!-- picture -->
+            <div class="col-3 col-md-12 p-0">
+            
+                <!-- 作品照片小圖１ -->
+                <div class="d-md-none border-end">
+                  <a href="#" class="d-block img-hover ">
+                    <img
+                      src="./assets/images/art06.jpeg"
+                      class="img-fluid"
+                      alt="夏天的時候"
+                    />
+                    <!-- hover後橘色三角形 -->
+                    <div class="triangle"></div>
+                  </a>
+                </div>
+                
+                <!-- 作品照片大圖１ -->
+                <div class="d-none d-md-block  position-relative"> 
+                  <!-- 桌機版排名號碼 -->
+                 <div
+                 class="number fs-2 d-none d-md-block position-absolute p-lg-1 border d-md-flex justify-content-md-center align-items-md-center"
+                   >3
+                 </div>
+                   <a href="#" class="d-block img-hover-md">
+                 
+                 <img
+               src="./assets/images/art06.jpeg"
+               class="ranking-img position-relative"
+               style="object-position: top;"
+               alt="夏天的時候"
+                  />
+                 <!-- hover後按鈕 -->
+                 <div class="moreBtn btn-white position-absolute">
+                  MORE</div>
+                 </a>
+                </div>
+                
+            
+            </div>
+            <!-- content -->
+            <div class="col-8 col-md-12 p-0">
+              <div class="card-body py-3 px-1 border-bottom border-top-md">
+                <h5 class="fs-5 lh-sm fw-bold">
                   夏天的時候
                 </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
-                >
+              </div>
+              <div class="card-text d-flex justify-content-between py-lg-1 p-1 ff-squada ">
                   <p>Bug Lin</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </li>
+   <!-- small cards -->
       <!-- 第四名 -->
-      <div class="col-12 col-lg-4 mb-lg-9 mb-3">
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-md-4 col-4">
-              <div
-                class="card-header p-0 border-0 d-flex align-items-center h-100"
-              >
-                <div class="number-smallCard fs-3 px-md-3 px-3">4</div>
-                <a href="#" class="d-block img-hover">
-                  <img
-                    src="./assets/images/art13.jpeg"
-                    class="img-fluid"
-                    alt="追求者送我的花"
-                  />
-                   <!-- hover後橘色三角形 -->
-                   <div class="triangle"></div>
-                </a>
+      <li class="col-md-4 mb-3">
+        <div class="card border border-black">
+          <div class="row m-0 d-lg-flex">
+            <!-- mobile number -->
+            <div class="col-1 p-0 fs-3">
+              <div class="d-flex align-items-center justify-content-center h-100 border-end">
+                <p>4</p>
               </div>
             </div>
-            <div class="col-md-8 col-8">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+            <!-- picture -->
+            <div class="col-3 p-0">
+                <!-- 作品照片小圖１ -->
+                <div class=" border-end">
+                  <a href="#" class="d-block img-hover ">
+                    <img
+                      src="./assets/images/art06.jpeg"
+                      class="img-fluid"
+                      alt="夏天的時候"
+                    />
+                    <!-- hover後橘色三角形 -->
+                    <div class="triangle"></div>
+                  </a>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="col-8 p-0">
+              <div class="card-body py-3 px-1 border-bottom">
+                <h5 class="fs-5 lh-sm fw-bold">
                   追求者送我的花
                 </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
-                >
-                  <p>Michael</p>
+              </div>
+              <div class="card-text d-flex justify-content-between py-lg-1 p-1 ff-squada ">
+                  <p> Michael</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </li>
       <!-- 第五名 -->
-      <div class="col-12 col-lg-4 mb-3">
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-md-4 col-4">
-              <div
-                class="card-header p-0 border-0 d-flex align-items-center h-100"
-              >
-                <div class="number-smallCard px-3 fs-3">5</div>
-                <a href="#" class="d-block img-hover">
-                  <img
-                    src="./assets/images/art07.jpeg"
-                    class="img-fluid"
-                    alt="今天釣到的魚"
-                  />
-                   <!-- hover後橘色三角形 -->
-                   <div class="triangle"></div>
-                </a>
+      <li class="col-md-4 mb-3">
+        <div class="card border border-black">
+          <div class="row m-0 d-lg-flex">
+            <!-- mobile number -->
+            <div class="col-1 p-0 fs-3">
+              <div class="d-flex align-items-center justify-content-center h-100 border-end">
+                <p>5</p>
               </div>
             </div>
-            <div class="col-md-8 col-8">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+            <!-- picture -->
+            <div class="col-3 p-0">
+                <!-- 作品照片小圖１ -->
+                <div class=" border-end">
+                  <a href="#" class="d-block img-hover ">
+                    <img
+                      src="./assets/images/art07.jpeg"
+                      class="img-fluid"
+                      alt="夏天的時候"
+                    />
+                    <!-- hover後橘色三角形 -->
+                    <div class="triangle"></div>
+                  </a>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="col-8 p-0">
+              <div class="card-body py-3 px-1 border-bottom">
+                <h5 class="fs-5 lh-sm fw-bold">
                   今天釣到的魚
+
                 </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
-                >
+              </div>
+              <div class="card-text d-flex justify-content-between py-lg-1 p-1 ff-squada ">
                   <p>Wei JJ</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </li>
       <!-- 第六名 -->
-      <div class="col-12 col-lg-4 mb-3">
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-md-4 col-4">
-              <div
-                class="card-header p-0 border-0 d-flex align-items-center h-100"
-              >
-                <div class="number-smallCard px-3 fs-3">6</div>
-                <a href="#" class="d-block img-hover">
-                  <img
-                    src="./assets/images/art08.jpeg"
-                    class="img-fluid"
-                    alt="人生中的貓咪們"
-                  />
-                   <!-- hover後橘色三角形 -->
-                   <div class="triangle"></div>
-                </a>
+      <li class="col-md-4 mb-3">
+        <div class="card border border-black">
+          <div class="row m-0 d-lg-flex">
+            <!-- mobile number -->
+            <div class="col-1 p-0 fs-3">
+              <div class="d-flex align-items-center justify-content-center h-100 border-end">
+                <p>6</p>
               </div>
             </div>
-            <div class="col-md-8 col-8">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold fs-5 lh-sm p-3 m-0 border-bottom">
+            <!-- picture -->
+            <div class="col-3 p-0">
+                <!-- 作品照片小圖１ -->
+                <div class=" border-end">
+                  <a href="#" class="d-block img-hover ">
+                    <img
+                      src="./assets/images/art08.jpeg"
+                      class="img-fluid"
+                      alt="人生中的貓咪們"
+                    />
+                    <!-- hover後橘色三角形 -->
+                    <div class="triangle"></div>
+                  </a>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="col-8 p-0">
+              <div class="card-body py-3 px-1 border-bottom ">
+                <h5 class="fs-5 lh-sm fw-bold">
                   人生中的貓咪們
+
                 </h5>
-                <div
-                  class="card-text d-flex justify-content-between py-1 px-3 ff-squada"
-                >
+              </div>
+              <div class="card-text d-flex justify-content-between py-lg-1 p-1 ff-squada ">
                   <p>Even Lai</p>
                   <div>
                     <i class="fa-brands fa-ethereum"></i>
                     <span>300</span>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </li>
     </div>
+      <!-- end of container div -->
   </div>
-  <!-- end of container div -->
   <!-- end of section-->
 </section>
 
 <!-- swiper作家artist -->
 <section class="artist mb-6">
-  <div class="container">
+  <div class="container position-relative  h-100">
     <!-- title -->
     <div
-    class="mb-4 mt-6 d-flex justify-content-between align-items-end border-bottom"
-  >
+    class="mb-4 mt-6 d-flex justify-content-between align-items-end border-bottom">
     <div
       class="d-flex justify-content-between align-items-baseline mb-1 mb-md-3"
     >
@@ -626,81 +579,73 @@
     </div>
    
     <!-- Swiper -->
-    <div class="swiper artistSwiper  position-relative">
-    <div class="swiper-wrapper">
-   <!-- slide 1 -->
-    <div class="swiper-slide ms-3 mb-3">
-      <div class="card border-0 bg-transparent">
-        <div class="card-header position-relative border-0 mb-3 p-0">
-          <a href="#" class="img-hover-artist">
-            <img src="./assets/images/artist01.jpeg" class="card-img-top artist-img" alt="artist">
-            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Michael</h3>
-            <button class="moreBtn  btn-white position-absolute">MORE</button>
-          </a>
+    <div class="swiper artistSwiper">
+      <div class="swiper-wrapper">
+        <!-- 1st slide -->
+        <div class="swiper-slide">
+          <div class="card h-100 border-0 bg-transparent
+          ">
+              <img src="./assets/images/artist01.jpeg" class="position-relative w-100 h-100" alt="Michael">
+              <div class="card-img-overlay p-0 ">
+                  <div class="card-title lh-1 text-white ff-squada ">Michael</div>
+                  <a href="#" class="moreBtn btn-white ">MORE</a>
+              </div>
+              <p class="bg-white p-4 mt-xs-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
         </div>
-        
-        <div class="card-body p-4">
-          <p class="card-text">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作...​</p>
-          
+        <!-- 2st slide -->
+        <div class="swiper-slide">
+          <div class="card h-100 border-0 bg-transparent
+          ">
+              <img src="./assets/images/artist02.jpeg" class="position-relative w-100 h-100" alt="Michael">
+              <div class="card-img-overlay p-0 ">
+                  <div class="card-title lh-1 text-white ff-squada ">Michael</div>
+                  <a href="#" class="moreBtn btn-white ">MORE</a>
+              </div>
+              <p class="bg-white p-4 mt-xs-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
         </div>
+         <!-- 3st slide -->
+         <div class="swiper-slide">
+          <div class="card h-100 border-0 bg-transparent
+          ">
+              <img src="./assets/images/artist03.jpeg" class="position-relative w-100 h-100" alt="Michael">
+              <div class="card-img-overlay p-0 ">
+                  <div class="card-title lh-1 text-white ff-squada ">Michael</div>
+                  <a href="#" class="moreBtn btn-white ">MORE</a>
+              </div>
+              <p class="bg-white p-4 mt-xs-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
+        </div>
+         <!-- 4st slide -->
+         <div class="swiper-slide">
+          <div class="card h-100 border-0 bg-transparent
+          ">
+              <img src="./assets/images/artist04.jpeg" class="position-relative w-100 h-100" alt="Michael">
+              <div class="card-img-overlay p-0 ">
+                  <div class="card-title lh-1 text-white ff-squada ">Michael</div>
+                  <a href="#" class="moreBtn btn-white ">MORE</a>
+              </div>
+              <p class="bg-white p-4 mt-xs-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
+        </div>
+         <!-- 5st slide -->
+         <div class="swiper-slide">
+          <div class="card h-100 border-0 bg-transparent
+          ">
+              <img src="./assets/images/artist05.jpeg" class="position-relative w-100 h-100" alt="Michael">
+              <div class="card-img-overlay p-0 ">
+                  <div class="card-title lh-1 text-white ff-squada ">Michael</div>
+                  <a href="#" class="moreBtn btn-white ">MORE</a>
+              </div>
+              <p class="bg-white p-4 mt-xs-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
+        </div>
+       
+      </div>
+      <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="swiper-slide mb-3">
-      <div class="card border-0 bg-transparent">
-        <div class="card-header position-relative border-0 mb-3 p-0">
-          <a href="#" class="img-hover-artist">
-            <img src="./assets/images/artist02.jpeg" class="card-img-top artist-img" alt="artist">
-            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Antony Wu</h3>
-            <button class="moreBtn  btn-white position-absolute">MORE</button>
-          </a>
-         
-        </div>
-        
-        <div class="card-body p-4">
-          <p class="card-text">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
-          
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide mb-3">
-      <div class="card border-0 bg-transparent">
-        <div class="card-header position-relative border-0 mb-3 p-0">
-          <a href="#" class="img-hover-artist">
-            <img src="./assets/images/artist03.jpeg" class="card-img-top artist-img" alt="artist">
-            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Antony Wu</h3>
-            <button class="moreBtn  btn-white position-absolute">MORE</button>
-          </a>
-         
-        </div>
-        
-        <div class="card-body p-4">
-          <p class="card-text">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
-          
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide mb-3">
-      <div class="card border-0 bg-transparent">
-        <div class="card-header position-relative border-0 mb-3 p-0">
-          <a href="#" class="img-hover-artist">
-            <img src="./assets/images/artist05.jpeg" class="card-img-top artist-img" alt="artist">
-            <h3 class="artist-name ff-squada fs-2 text-white position-absolute">Antony Wu</h3>
-            <button class="moreBtn  btn-white position-absolute">MORE</button>
-          </a>
-         
-        </div>
-        
-        <div class="card-body p-4">
-          <p class="card-text">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
-          
-        </div>
-      </div>
-    </div>
- 
-    </div>
-    <div class="swiper-pagination swiper-pagination-pagination-bullet "></div>
-    </div>
-  </div>
 </section>
 
 <!-- artwork瀑布流 -->

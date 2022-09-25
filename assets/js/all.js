@@ -1,9 +1,5 @@
 "use strict";
 
-var _Swiper;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 $(function () {
   console.log("Hello Bootstrap5");
 }); //點擊搜尋按鈕 search icon後 h1& menu icon d-none then show search form
@@ -39,15 +35,19 @@ $(document).ready(function () {
 }); // artist swiper
 // <!-- Initialize Swiper -->
 
-var swiper = new Swiper(".artistSwiper", (_Swiper = {
-  slidesPerView: "auto",
-  centeredSlides: true
-}, _defineProperty(_Swiper, "slidesPerView", 1), _defineProperty(_Swiper, "spaceBetween", 24), _defineProperty(_Swiper, "pagination", {
-  el: ".swiper-pagination",
-  clickable: true
-}), _defineProperty(_Swiper, "breakpoints", {
-  992: {
-    slidesPerView: 3
+var swiper = new Swiper(".artistSwiper", {
+  slidesPerView: "1",
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3
+    }
   }
-}), _Swiper));
+});
 //# sourceMappingURL=all.js.map
