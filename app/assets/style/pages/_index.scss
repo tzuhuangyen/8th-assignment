@@ -14,14 +14,26 @@
     }
   }
   .bannerCardImg {
+    height: 372px;
     width: 100%;
+    @include media-breakpoint-up(lg) {
+      height: 340px;
+    }
   }
 }
 .banner {
   .bannerCardBody {
-    height: 341px;
+    height: 273px;
+    padding: 32px 12px 24px;
     @include media-breakpoint-up(lg) {
+      height: 341px;
       padding: 48px 24px 24px 24px;
+    }
+  }
+  .card-text {
+    @include media-breakpoint-up(lg) {
+      height: 96px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -29,6 +41,7 @@
 // ranking 排名 // 照片
 .ranking {
   .ranking-img {
+    // 小圖
     width: 87px;
     height: 90px;
     @include media-breakpoint-up(md) {
@@ -37,9 +50,10 @@
     }
   }
 }
+// 小圖
 .ranking {
   .img-fluid {
-    width: 87px;
+    width: 100%;
     height: 90px;
   }
 }
@@ -47,17 +61,20 @@
 //號碼＆hover按鈕位置
 .ranking {
   .number {
+    z-index: 2;
     width: 38px;
     background-color: white;
+
     @include media-breakpoint-up(md) {
       width: 64px;
       height: 64px;
-      top: -1px;
-      left: -1px;
+      top: 0px;
+      left: 0px;
     }
   }
 }
 
+// moreBtn
 .ranking {
   .moreBtn {
     bottom: -1px;
@@ -65,7 +82,7 @@
     display: none;
   }
 }
-
+//hover效果
 .ranking-img {
   &:hover {
     .img-hover {
@@ -79,45 +96,105 @@
 }
 
 // artist
-.artist {
-  .card {
-    height: 450px;
-    @include media-breakpoint-up(lg) {
-      height: 500px;
-    }
-  }
-  .swiper-slide {
-    &-active {
-      transform: scale(1.2);
-      z-index: 2;
-    }
-    .swiper-slide-prev {
-      margin-left: -100px;
-      margin-right: 100px;
-      width: 25%;
-    }
-    .swiper-slide-next {
-      margin-left: 100px;
-      width: 25%;
-    }
+.artistSwiper {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  swiper-wrapper {
+    transform: translate3d(-341px, 0px, 0px);
   }
 }
-.artist-img {
-  width: 100%;
-  height: 232px;
+// 不確定需不需要
+.swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.artistSwiper {
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    .card {
+      .card-title {
+        padding-left: 24px;
+        padding-top: 24px;
+        font-size: 32px;
+        @include media-breakpoint-up(md) {
+          font-size: 80px;
+        }
+      }
+      .moreBtn {
+        position: absolute;
+        bottom: 25%;
+        right: 5%;
+        width: 132px;
+        @include media-breakpoint-up(md) {
+          bottom: 5%;
+          right: 5%;
+        }
+      }
+    }
+  }
 }
 
-.img-hover-artist {
-  .artist-name {
-    top: 44px;
-    left: 44px;
-    display: none;
+.artistSwiper {
+  .swiper-slide-active {
+    width: 600px !important;
+    .card {
+      @include media-breakpoint-up(lg) {
+        width: calc(90% + 46%);
+        margin-left: -23%;
+      }
+    }
+    p {
+      opacity: 0.8;
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        bottom: 16px;
+        left: 24px;
+        max-width: 307px;
+      }
+    }
   }
-  .moreBtn {
-    bottom: 8px;
-    right: 54px;
-    display: none;
+  .swiper-slide-prev {
+    margin-left: -100px;
+    margin-right: 60px !important;
+    width: 25%;
+    @include media-breakpoint-up(lg) {
+      padding-right: 8% !important;
+    }
+    .card-title,
+    .moreBtn,
+    p {
+      display: none;
+    }
   }
+  .swiper-slide-next {
+    margin-left: -90px;
+    width: 25%;
+    @include media-breakpoint-up(lg) {
+      padding-left: 8% !important;
+    }
+    .card-title,
+    .moreBtn,
+    p {
+      display: none;
+    }
+  }
+  // .swiper-active-item,
+  // // p {
+  // //   display: flex;
+  // //   @include media-breakpoint-up(lg) {
+  // //     display: none;
+  // //   }
+  // }
 }
 
 .artist {

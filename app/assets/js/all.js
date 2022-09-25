@@ -41,11 +41,11 @@ $(document).ready(function () {
 // <!-- Initialize Swiper -->
 
 var swiper = new Swiper(".artistSwiper", {
-  slidesPerView: "auto",
+  slidesPerView: "1",
+  spaceBetween: 30,
   centeredSlides: true,
+  loop: true,
 
-  slidesPerView: 1,
-  spaceBetween: 24,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
