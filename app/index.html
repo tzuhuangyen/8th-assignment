@@ -106,7 +106,7 @@ current: index
       <div
         class="d-flex justify-content-between align-items-baseline mb-1 mb-md-3"
       >
-        <h2 class="fs-1 me-3">Ranking</h2>
+        <h2 class="fs-1 me-3 ff-squada" >Ranking</h2>
         <p class="fs-4 fw-bold d-none d-md-block">市價排行榜</p>
       </div>
       <div class="moreBtn-border">MORE</div>
@@ -462,7 +462,7 @@ current: index
     <div
       class="d-flex justify-content-between align-items-baseline mb-1 mb-md-3"
     >
-      <h2 class="fs-1 me-3">Artist</h2>
+      <h2 class="fs-1 me-3 ff-squada ">Artist</h2>
       <p class="fs-4 fw-bold d-none d-md-block">熱門藝術家</p>
     </div>
     <div class="moreBtn-border">MORE</div>
@@ -499,7 +499,7 @@ current: index
          <div class="swiper-slide">
           <div class="card h-100 border-0 bg-transparent
           ">
-              <img src="./assets/images/artist03.jpeg" class="position-relative w-100 h-100" alt="Michael">
+              <img src="./assets/images/artist03.jpeg" class="position-relative w-100" alt="Michael" style="height:439px;">
               <div class="card-img-overlay p-0 ">
                   <div class="card-title lh-1 text-white ff-squada ">Michael</div>
                   <a href="#" class="moreBtn btn-white ">MORE</a>
@@ -548,48 +548,48 @@ current: index
      <div
        class="d-flex justify-content-between align-items-baseline mb-1 mb-md-3"
      >
-       <h2 class="fs-1 me-3">Artwork</h2>
+       <h2 class="fs-1 me-3 ff-squada">Artwork</h2>
        <p class="fs-4 fw-bold d-none d-md-block">最新藝術品</p>
      </div>
      <div class="moreBtn-border">MORE</div>
-   </div>
+     </div>
 
-    <div
+     <ul
       class="row"
       data-masonry='{"percentPosition": true }'
       style="position: relative; height: 774px"
     >
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
-        style="position: absolute; left: 0%; top: 0px"
-      >
+      <!-- 1st card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 " style="position: absolute; left: 0%; top: 0px">
         <div class="artwork-card border-0">
-            <div class="card-header  p-1 p-lg-4  border-0 bg-white  position-relative ">
-              <a href="#" class="img-hover-artwork ">
-              <img
-              src="./assets/images/art09.jpeg" alt="區塊戀-他的私生活"
-                class="bd-placeholder-img card-img-top"
-                width="100%"
-                height="200"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: Image cap"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-              <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-                <i class="fa-brands fa-ethereum"></i>
-                <span>300</span>
-              </p>
-              
-              <div class="moreBtn btn-white position-absolute"> MORE</div>
-            </a>
-            </div> 
-            <div class="card-body p-1 p-lg-3 bg-light">
+            <div class="card-header  p-1 p-lg-4   bg-white  position-relative ">
+              <div href="#" class="img-hover-artwork">
+                  <img
+                  src="./assets/images/art09.jpeg" alt="區塊戀-他的私生活"
+                    class="bd-placeholder-img "
+                    width="100%"
+                    height="200"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                    <div class="p-2 position-absolute top-0 start-0 text-hover">
+                      <p> 唯一想擁有的人，唯一不可以擁有的</p>
+                      <i class="fa-brands fa-ethereum">300</i>
+                     </div>
+                    <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
+                </div>
+            </div>
+           
+             <div class="card-body p-1 p-lg-3 bg-light">
               <h5 class="card-title m-0">區塊戀-他的私生活</h5>
             </div>
         </div>
-      </div>
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+
+      <!-- 2st card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -598,28 +598,32 @@ current: index
             <img
             src="./assets/images/art10.jpeg" alt="區塊戀-他的私生活"
               class="bd-placeholder-img card-img-top"
+              style="height:327px";
               width="100%"
-              height="200"
+              
               xmlns="http://www.w3.org/2000/svg"
               role="img"
               aria-label="Placeholder: Image cap"
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
-          </a>
-          </div> 
+        
+              <div class="p-2 position-absolute top-0 start-0 text-hover">
+                <p> 唯一想擁有的人，唯一不可以擁有的</p>
+                <i class="fa-brands fa-ethereum">300</i>
+               </div>
+              <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
+            </a> 
+           </div>
+         
+        
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+     <!-- 3rd card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -636,20 +640,20 @@ current: index
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
+            <div class="p-2 position-absolute top-0 start-0 text-hover">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <i class="fa-brands fa-ethereum">300</i>
+             </div>
+            <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
           </a>
           </div> 
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+      <!-- 4th card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -666,21 +670,20 @@ current: index
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
+            <div class="p-2 position-absolute top-0 start-0 text-hover">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <i class="fa-brands fa-ethereum">300</i>
+             </div>
+            <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
           </a>
           </div> 
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
-
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+      <!-- 5th card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -697,20 +700,20 @@ current: index
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
+            <div class="p-2 position-absolute top-0 start-0 text-hover">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <i class="fa-brands fa-ethereum">300</i>
+             </div>
+            <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
           </a>
           </div> 
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+      <!-- 6th card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -727,20 +730,20 @@ current: index
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
+            <div class="p-2 position-absolute top-0 start-0 text-hover">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <i class="fa-brands fa-ethereum">300</i>
+             </div>
+            <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
           </a>
           </div> 
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+      <!-- 7th card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -757,20 +760,20 @@ current: index
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
+            <div class="p-2 position-absolute top-0 start-0 text-hover">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <i class="fa-brands fa-ethereum">300</i>
+             </div>
+            <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
           </a>
           </div> 
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
-      <div class="col-6 col-lg-3 mb-3 mb-lg-7 "
+      </li>
+      <!-- 8th card -->
+      <li class="col-6 col-lg-3 mb-3 mb-lg-7 "
       style="position: absolute; left: 0%; top: 0px"
     >
       <div class="artwork-card border-0">
@@ -787,21 +790,20 @@ current: index
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-            <p class="text-hover position-absolute"> 唯一想擁有的人，唯一不可以擁有的
-              <i class="fa-brands fa-ethereum"></i>
-              <span>300</span>
-            </p>
-            
-            <div class="moreBtn btn-white position-absolute"> MORE</div>
+            <div class="p-2 position-absolute top-0 start-0 text-hover">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <i class="fa-brands fa-ethereum">300</i>
+             </div>
+            <div class="moreBtn btn-white mt-8 position-absolute bottom-0 end-0 "> MORE</div>
           </a>
           </div> 
           <div class="card-body p-1 p-lg-3 bg-light">
             <h5 class="card-title m-0">區塊戀-他的私生活</h5>
           </div>
       </div>
-      </div>
+      </li>
     
-    </div>
+     </ul>
   </div>
 </section>
 
@@ -811,17 +813,17 @@ current: index
 <section class="procedure">
    <!-- title -->
    <div class=" mb-1 mb-md-3 text-center border-bottom border-4">
-    <h2 class="fs-2 me-3 mb-3 ff-squada ">Join Us</h2>
+    <h2 class="fs-1 me-3 mb-3 ff-squada ">Join Us</h2>
     <p class="fs-4 fw-bold mb-5">創建並出售你的藝術品</p>
   </div>
   <hr class="mt-1 mb-7 mb-lg-9">
 
-  <div class="container">
+  <div class="container text-center">
    
     <!-- 流程卡片 -->
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-12 mb-7 mb-lg-9">
-        <div class="card border-0 text-center " style="width: 18rem;">
+    <ul class="row">
+      <li class="col-md-3 mb-7 mb-lg-9">
+        <div class="card border-0 text-center ">
           <div class="card-header border-0 bg-light" style="color: Tomato;">
             <i class="fa-solid fa-wallet fa-3x "></i>
           </div>
@@ -832,9 +834,9 @@ current: index
          
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mb-7 mb-lg-9">
-        <div class="card border-0 text-center " style="width: 18rem;">
+      </li>
+      <li class="col-md-3 mb-7 mb-lg-9">
+        <div class="card border-0 text-center ">
           <div class="card-header border-0 bg-light" style="color: Tomato;">
             <i class="fa-solid fa-pen-ruler fa-3x "></i>
           </div>
@@ -845,9 +847,9 @@ current: index
          
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mb-7 mb-lg-9">
-        <div class="card border-0 text-center " style="width: 18rem;">
+      </li>
+      <li class="col-md-3 mb-7 mb-lg-9">
+        <div class="card border-0 text-center ">
           <div class="card-header border-0 bg-light" style="color: Tomato;">
             <i class="fa-solid fa-icons fa-3x "></i>
           </div>
@@ -858,9 +860,9 @@ current: index
          
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mb-7 mb-lg-9">
-        <div class="card border-0 text-center " style="width: 18rem;">
+      </li>
+      <li class="col-md-3 mb-7 mb-lg-9">
+        <div class="card border-0 text-center ">
           <div class="card-header border-0 bg-light" style="color: Tomato;">
             <i class="fa-solid fa-tag fa-3x "></i>
           </div>
@@ -871,8 +873,8 @@ current: index
          
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
    </div>
     <!-- bottom line -->
   <div class="mb-1 border-bottom border-4">
