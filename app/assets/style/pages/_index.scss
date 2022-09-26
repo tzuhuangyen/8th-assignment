@@ -100,9 +100,6 @@
   padding-top: 50px;
   width: 100%;
   height: 100%;
-  swiper-wrapper {
-    transform: translate3d(-341px, 0px, 0px);
-  }
 }
 // 不確定需不需要
 .swiper-slide {
@@ -110,7 +107,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  // margin-left: 10px;
+  &-active {
+    width: 100% !important;
+    @include media-breakpoint-up(lg) {
+      width: 50% !important;
+    }
+  }
+  &-prev,
+  &-next {
+    @include media-breakpoint-up(lg) {
+      width: 25% !important;
+    }
+    .card-img-overlay,
+    p {
+      display: none;
+    }
+  }
 }
 .artistSwiper {
   .swiper-slide img {
@@ -136,65 +149,12 @@
         right: 5%;
         width: 132px;
         @include media-breakpoint-up(md) {
-          bottom: 5%;
+          bottom: 20%;
           right: 5%;
         }
       }
     }
   }
-}
-
-.artistSwiper {
-  .swiper-slide-active {
-    width: 600px !important;
-    .card {
-      @include media-breakpoint-up(lg) {
-        width: calc(90% + 46%);
-        margin-left: -23%;
-      }
-    }
-    p {
-      opacity: 0.8;
-      @include media-breakpoint-up(lg) {
-        position: absolute;
-        bottom: 16px;
-        left: 24px;
-        max-width: 307px;
-      }
-    }
-  }
-  .swiper-slide-prev {
-    margin-left: -100px;
-    margin-right: 60px !important;
-    width: 25%;
-    @include media-breakpoint-up(lg) {
-      padding-right: 8% !important;
-    }
-    .card-title,
-    .moreBtn,
-    p {
-      display: none;
-    }
-  }
-  .swiper-slide-next {
-    margin-left: -90px;
-    width: 25%;
-    @include media-breakpoint-up(lg) {
-      padding-left: 8% !important;
-    }
-    .card-title,
-    .moreBtn,
-    p {
-      display: none;
-    }
-  }
-  // .swiper-active-item,
-  // // p {
-  // //   display: flex;
-  // //   @include media-breakpoint-up(lg) {
-  // //     display: none;
-  // //   }
-  // }
 }
 
 .artist {
@@ -220,9 +180,7 @@
       border-bottom: 1px solid black;
     }
   }
-  .text-hover {
-    display: none;
-  }
+
   .moreBtn {
     width: 130px;
     height: 35px;
@@ -230,6 +188,27 @@
     right: 0px;
     bottom: 0px;
     text-align: center;
-    display: none;
+  }
+  &-header:hover &-overlay {
+    opacity: 1;
+  }
+  &-overlay {
+    transition: opacity 0.3s;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 16px;
+    padding: 16px;
+  }
+  &-content {
+    border: 1px solid #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      align-self: end;
+    }
   }
 }
