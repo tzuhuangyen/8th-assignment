@@ -137,6 +137,9 @@
 
   .swiper-slide {
     .card {
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
       .card-title {
         padding-left: 24px;
         padding-top: 24px;
@@ -162,8 +165,11 @@
 .artistSwiper {
   .swiper-pagination {
     position: absolute;
-    bottom: 0px;
+    bottom: 40%;
     left: 0px;
+    @include media-breakpoint-up(lg) {
+      bottom: 100px;
+    }
   }
   .swiper-pagination-bullet {
     opacity: initial;
