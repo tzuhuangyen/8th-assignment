@@ -13388,6 +13388,12 @@ ul {
      object-fit: cover;
 }
 
+@media (min-width: 992px) {
+  .artistSwiper .swiper-slide .card {
+    width: 100%;
+  }
+}
+
 .artistSwiper .swiper-slide .card .card-title {
   padding-left: 24px;
   padding-top: 24px;
@@ -13416,8 +13422,14 @@ ul {
 
 .artistSwiper .swiper-pagination {
   position: absolute;
-  bottom: 0px;
+  bottom: 40%;
   left: 0px;
+}
+
+@media (min-width: 992px) {
+  .artistSwiper .swiper-pagination {
+    bottom: 100px;
+  }
 }
 
 .artistSwiper .swiper-pagination-bullet {
