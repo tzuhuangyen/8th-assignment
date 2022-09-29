@@ -13362,13 +13362,15 @@ ul {
 
 @media (min-width: 992px) {
   .swiper-slide-active {
-    width: 50% !important;
+    width: 45% !important;
+    height: 500px;
   }
 }
 
 @media (min-width: 992px) {
   .swiper-slide-prev, .swiper-slide-next {
     width: 25% !important;
+    height: 250px;
   }
 }
 
@@ -13412,18 +13414,18 @@ ul {
   }
 }
 
-.artist .swiper-pagination {
+.artistSwiper .swiper-pagination {
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
 
-.artist .swiper-pagination-bullet {
+.artistSwiper .swiper-pagination-bullet {
   opacity: initial;
   border-radius: 0;
 }
 
-.artist .swiper-pagination-bullet-active {
+.artistSwiper .swiper-pagination-bullet-active {
   background-color: #e6553b;
   width: 16px;
 }
@@ -13435,12 +13437,21 @@ ul {
 }
 
 .artwork .moreBtn {
-  width: 130px;
-  height: 35px;
-  padding: 8px 12px;
+  width: 90px;
+  height: 20px;
+  padding: 2px 6px;
   right: 0px;
   bottom: 0px;
+  font-size: 12px;
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  .artwork .moreBtn {
+    width: 130px;
+    height: 35px;
+    padding: 8px 12px;
+  }
 }
 
 .artwork-header:hover .artwork-overlay {
@@ -13472,6 +13483,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 8px;
 }
 
 .artwork-content button {
